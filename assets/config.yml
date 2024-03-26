@@ -78,8 +78,8 @@ services:
         keywords: "书 图书 book library"
         url: "http://192.168.0.10:8083"
         target: "_blank" # optional html a tag target attribute
-      - name: "不存在的链接"
-        logo: "assets/tools/sample2.png"
-        subtitle: "Another application"
+      - name: "网络存储"
+        logo: "assets/icons/Nas.jpeg"
+        subtitle: "NAS"
         tag: "app"
-        url: "#"
+        url: "http://192.168.0.10:5000"
