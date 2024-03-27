@@ -84,7 +84,7 @@ services:
         tag: "app"
         url: "http://192.168.0.10:5000"
       - name: "多媒体娱乐"
-        logo: "assets/icons/Nas.jpeg"
+        logo: "assets/icons/Plex.jpeg"
         subtitle: "Plex media player"
         tag: "app"
         url: "http://192.168.0.10:32400/web"
