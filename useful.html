@@ -1,0 +1,48 @@
+<html>
+<head>我们家的一些信息</head>
+
+<body>
+<p>
+我们家的常用信息可以通过 <a href="https://docs.google.com/document/d/1LN4QuGJCImOhFNqa9Oe6rPDuWPkj1kF73uIVd54aGK0" target="_blank" rel="noopener noreferrer">Google 文档</a>访问到。
+访问这个文档需要登录你的 Google 账户。如果无法登录 Google 账户，则可以通过下面这个下载链接访问离线文档。
+</p>
+
+<p>
+<a href="useful.pdf" target="_blank" rel="noopener noreferrer">密码保护的离线文档</a>
+</p>
+
+<p>
+密码分为三部分，包含你我的姓名和生日，以及我们最初生活在一起的城市。用下面这个例子来说明：<br/>
+
+<ul>
+<li>你的名字是张三，生日（月日）是一月十二日。</li>
+<li>我的名字是李四，生日是六月二十日。</li>
+<li>我们最初生活在一起的城市是石家庄。</li>
+</ul>
+
+那么密码是：<h3>ZhangSan0112&amp;LiSi0620@Shijiazhuang</h3><br/>
+注意这里的大小写：姓和名的第一个字母大写，以及城市的第一个字母大写。
+</p>
+
+
+<p><label for="name1">你的名字的拼音:</label><input type="text" id="name1"></p>
+<p><label for="dob1">你的生日（月日）:</label><input type="text" id="dob1"></p>
+<p><label for="name2">我的名字的拼音:</label><input type="text" id="name2"></p>
+<p><label for="dob2">我的生日（月日）:</label><input type="text" id="dob2"></p>
+<p><label for="city">我们最初生活在一起的城市（英文/拼音）:</label><input type="text" id="city"></p>
+<p><button onclick="displayText()">组合出密码</button>
+<h3 id="output"></div>
+
+    <script>
+        function displayText() {
+            var name1 = document.getElementById("name1").value;
+			var dob1 = document.getElementById("dob1").value;
+			var name2 = document.getElementById("name2").value;
+			var dob2 = document.getElementById("dob2").value;
+			var city = document.getElementById("city").value;
+            var outputDiv = document.getElementById("output");
+            outputDiv.textContent = name1 + dob1 + "&" + name2 + dob2 + "@" + city;
+        }
+    </script>
+</body>
+</html>

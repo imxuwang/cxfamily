@@ -3,7 +3,7 @@
 # See https://fontawesome.com/v5/search for icons options
 
 title: "cxfamily"
-subtitle: "our"
+# subtitle: "our"
 logo: "logo.png"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
@@ -68,8 +68,8 @@ colors:
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "内网应用"
-    icon: "fas fa-cloud"
+  - name: "内网"
+    icon: "fas fa-home"
     items:
       - name: "图书馆"
         logo: "assets/icons/Calibre.jpeg"
@@ -88,3 +88,12 @@ services:
         subtitle: "Plex media player"
         tag: "app"
         url: "http://192.168.0.10:32400/web"
+        
+  - name: "外网"
+    icon: "fas fa-cloud"
+    items:
+      - name: "实用信息"
+        logo: "assets/icons/Document.png"
+        subtitle: "容易忘记的东西"
+        tag: "link"
+        url: "useful.html"
