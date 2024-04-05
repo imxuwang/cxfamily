@@ -107,3 +107,8 @@ services:
         tag: "link"
         logo: "assets/icons/Investment.png"
         url: "https://docs.google.com/spreadsheets/d/1JaIYgrGwedAsjFZO73rPrxQwqaghy4uvFfloxa2hQRI"
+      - name: "库存盘点"
+        subtitle: "Pantry List"
+        tag: "link"
+        logo: "assets/icons/Pantry.png"
+        url: "https://docs.google.com/spreadsheets/d/1ub4fmAg6HtLmKG3ekyk5wbkp2adehJVZRhna0R0RBXw"
