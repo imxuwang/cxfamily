@@ -9,6 +9,12 @@ logo: "logo.png"
 header: false
 footer: false
 
+columns: "3"
+
+defaults:
+  layout: List
+  colorTheme: light
+
 # Optional theme customization
 theme: default
 colors:
@@ -117,10 +123,10 @@ services:
       - name: "vscode mini"
         logo: "assets/icons/VScode.png"
         subtitle: "MINI"
-        tag: "link"
+        tag: "app"
         url: "https://vscode.dev/tunnel/mini"
       - name: "vscode proto-dev"
         logo: "assets/icons/VScode.png"
         subtitle: "Proto Dev VM"
-        tag: "link"
+        tag: "app"
         url: "https://vscode.dev/tunnel/proto-dev"
