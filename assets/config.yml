@@ -93,6 +93,11 @@ services:
         subtitle: "Plex media player"
         tag: "app"
         url: "http://192.168.0.10:32400/web"
+      - name: "百度网盘"
+        logo: "assets/icons/Baidu.jpg"
+        subtitle: "百度网盘文件下载"
+        tag: "app"
+        url: "http://192.168.0.10:8092/"
         
   - name: "外网"
     icon: "fas fa-cloud"
