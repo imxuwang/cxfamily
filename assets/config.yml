@@ -117,9 +117,9 @@ services:
         tag: "link"
         logo: "assets/icons/Pantry.png"
         url: "https://docs.google.com/spreadsheets/d/1ub4fmAg6HtLmKG3ekyk5wbkp2adehJVZRhna0R0RBXw"
-      - name: "找房 2024"
-        logo: "assets/icons/House.png"
-        url: "https://docs.google.com/spreadsheets/d/10rKHwY8YwLVfLvkg9bS7vJgRTR_BQsw2yfDYWhJOfCw/edit#gid=0"
+#      - name: "找房"
+#        logo: "assets/icons/House.png"
+#        url: "https://docs.google.com/spreadsheets/d/10rKHwY8YwLVfLvkg9bS7vJgRTR_BQsw2yfDYWhJOfCw/edit#gid=0"
   - name: "编程"
     icon: "fas fa-code"
     items:
