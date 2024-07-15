@@ -122,9 +122,9 @@ services:
         tag: "link"
         logo: "assets/icons/Accounting.png"
         url: "https://docs.google.com/spreadsheets/d/1S4o0NwLsVsnhKyzdWyU41U2fUKn9kWwBJhZrtc7HjVY/edit"
-#      - name: "找房"
-#        logo: "assets/icons/House.png"
-#        url: "https://docs.google.com/spreadsheets/d/10rKHwY8YwLVfLvkg9bS7vJgRTR_BQsw2yfDYWhJOfCw/edit#gid=0"
+      - name: "买房评估"
+        logo: "assets/icons/House.png"
+        url: "https://docs.google.com/document/d/15HZ-jKkJiU-mhZ68i6Fz90dJU26GfdVWJpIYMk-7yz4/edit"
   - name: "编程"
     icon: "fas fa-code"
     items:
