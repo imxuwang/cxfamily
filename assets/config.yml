@@ -138,3 +138,8 @@ services:
         subtitle: "Proto Dev VM"
         tag: "app"
         url: "https://vscode.dev/tunnel/proto-dev"
+      - name: "portainer"
+        logo: "assets/icons/Portainer.png"
+        subtitle: "Portainer controller"
+        tag: "app"
+        url: "https://192.168.0.10:9443/"
