@@ -93,6 +93,11 @@ services:
         subtitle: "Plex media player"
         tag: "app"
         url: "http://192.168.0.10:32400/web"
+      - name: "文件管理"
+        logo: "assets/icons/FileBrowser.png"
+        subtitle: "File Browser"
+        tag: "app"
+        url: "http://192.168.0.10:8080"
         
   - name: "外网"
     icon: "fas fa-cloud"
