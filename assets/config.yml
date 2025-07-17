@@ -180,4 +180,4 @@ services:
         logo: "assets/icons/OpenRouter.png"
         subtitle: "OpenWebUI - OpenRouter"
         tag: "app"
-        url: "http://192.168.0.10:8181"
+        url: "http://192.168.0.10:8183"
