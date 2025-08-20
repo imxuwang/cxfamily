@@ -83,6 +83,11 @@ services:
         keywords: "书 图书 book library"
         url: "http://192.168.0.10:8083"
         target: "_blank" # optional html a tag target attribute
+      - name: "背单词"
+        logo: "assets/icons/Dictionary.jpg"
+        subtitle: "在线背单词"
+        tag: "app"
+        url: "http://192.168.0.10:30026/recitewords/"
       - name: "网页存档"
         logo: "assets/icons/Archive.png"
         subtitle: "历史网页存档记录"
