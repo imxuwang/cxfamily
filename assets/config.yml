@@ -147,6 +147,7 @@ services:
         subtitle: "Plex media player"
         tag: "app"
         url: "http://gateway.cxfamily.eu:32400/web"
+  
   - name: "其他"
     icon: "fas fa-code"
     items:
