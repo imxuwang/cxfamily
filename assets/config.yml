@@ -113,6 +113,11 @@ services:
         subtitle: "File Browser"
         tag: "app"
         url: "http://192.168.0.10:8080"
+        - name: "监控"
+        logo: "assets/icons/Surveillance.png"
+        subtitle: "Surveillance"
+        tag: "app"
+        url: "http://192.168.0.10:8184"
         
   - name: "外网"
     icon: "fas fa-cloud"
