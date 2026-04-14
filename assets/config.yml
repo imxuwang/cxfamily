@@ -114,8 +114,8 @@ services:
         tag: "app"
         url: "http://192.168.0.10:8080"
       - name: "RDP"
-        logo: "assets/icons/Surveillance.png"
-        subtitle: "Surveillance"
+        logo: "assets/icons/RDP.png"
+        subtitle: "RDP"
         tag: "app"
         url: "http://192.168.0.10:8084/guacamole"
         
