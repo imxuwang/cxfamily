@@ -149,7 +149,7 @@ services:
         url: "http://gateway.cxfamily.eu:32400/web"
       - name: "转运"
         logo: "assets/icons/Forward.png"
-        subtitle: "Plex media player"
+        subtitle: "Taobao"
         tag: "link"
         url: "https://docs.google.com/spreadsheets/d/1htyVbi4PDFxK5HyZ4TtBV-kH1_0AGnpmanwUeJjaleM/edit"
   
