@@ -147,7 +147,7 @@ services:
         subtitle: "Plex media player"
         tag: "app"
         url: "http://gateway.cxfamily.eu:32400/web"
-      - name: "转运"
+      - name: "淘宝转运"
         logo: "assets/icons/Forward.png"
         subtitle: "Taobao"
         tag: "link"
