@@ -349,6 +349,20 @@
       line-height: 1.45;
     }
 
+    .answer-feedback {
+      margin-top: 18px;
+      padding: 14px 16px;
+      border: 1px solid #bfcef1;
+      border-left: 4px solid var(--blue);
+      border-radius: 12px;
+      background: #f2f6ff;
+      line-height: 1.55;
+    }
+
+    .answer-feedback[hidden] { display: none; }
+
+    .answer-feedback p { margin: 5px 0; }
+
     .quiz-actions {
       display: flex;
       justify-content: space-between;
@@ -570,12 +584,17 @@
         <div id="questionTopic" class="question-topic">British history</div>
         <h2 id="questionText" tabindex="-1"></h2>
         <div id="answers" class="answers" role="radiogroup" aria-labelledby="questionText"></div>
+        <div id="answerFeedback" class="answer-feedback" hidden aria-live="polite">
+          <p><strong>Correct answer:</strong> <span id="correctAnswer"></span></p>
+          <p><strong>Explanation:</strong> <span id="answerExplanation"></span></p>
+        </div>
       </article>
 
       <div class="quiz-actions">
         <button id="prevBtn" class="btn btn-secondary" type="button">Previous</button>
         <div class="right-actions">
           <button id="submitBtn" class="btn btn-ghost" type="button">Finish test</button>
+          <button id="checkAnswerBtn" class="btn btn-ghost" type="button">Check Answer</button>
           <button id="nextBtn" class="btn btn-primary" type="button">Next</button>
         </div>
       </div>
@@ -4691,6 +4710,9 @@
     const questionText = document.getElementById('questionText');
     const questionTopic = document.getElementById('questionTopic');
     const answersEl = document.getElementById('answers');
+    const answerFeedback = document.getElementById('answerFeedback');
+    const correctAnswer = document.getElementById('correctAnswer');
+    const answerExplanation = document.getElementById('answerExplanation');
     const progressText = document.getElementById('progressText');
     const progressPercent = document.getElementById('progressPercent');
     const progressBar = document.getElementById('progressBar');
@@ -4699,6 +4721,7 @@
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
     const submitBtn = document.getElementById('submitBtn');
+    const checkAnswerBtn = document.getElementById('checkAnswerBtn');
     const retryBtn = document.getElementById('retryBtn');
     const backSetupBtn = document.getElementById('backSetupBtn');
 
@@ -4771,6 +4794,10 @@
       return actual.length === expected.length && expected.every(answer => actual.includes(answer));
     }
 
+    function formatAnswer(answer) {
+      return Array.isArray(answer) ? answer.join(', ') : answer;
+    }
+
     function renderQuestion() {
       const item = quiz[currentIndex];
       const selected = responses[currentIndex];
@@ -4785,6 +4812,9 @@
       answeredCountEl.textContent = `${answered} answered`;
       questionTopic.textContent = item.topic;
       questionText.textContent = item.question;
+      answerFeedback.hidden = true;
+      correctAnswer.textContent = '';
+      answerExplanation.textContent = '';
 
       answersEl.setAttribute('role', multipleAnswers ? 'group' : 'radiogroup');
       answersEl.innerHTML = '';
@@ -4811,6 +4841,14 @@
       prevBtn.disabled = currentIndex === 0;
       nextBtn.textContent = currentIndex === quiz.length - 1 ? 'Review first question' : 'Next';
       questionText.focus({ preventScroll: true });
+    }
+
+    function showAnswer() {
+      const item = quiz[currentIndex];
+      if (!item) return;
+      correctAnswer.textContent = formatAnswer(item.answer);
+      answerExplanation.textContent = item.explanation;
+      answerFeedback.hidden = false;
     }
 
     function startQuiz(count) {
@@ -4847,8 +4885,10 @@
       quiz.forEach((item, index) => {
         const selected = responses[index];
         const isCorrect = isAnswerCorrect(item, selected);
-        const selectedText = Array.isArray(selected) ? selected.join(', ') : selected || 'Not answered';
-        const correctText = Array.isArray(item.answer) ? item.answer.join(', ') : item.answer;
+        const selectedText = Array.isArray(selected)
+          ? selected.length ? formatAnswer(selected) : 'Not answered'
+          : selected || 'Not answered';
+        const correctText = formatAnswer(item.answer);
         const review = document.createElement('section');
         review.className = 'review-item';
         review.innerHTML = `
@@ -4900,6 +4940,8 @@
     });
 
     submitBtn.addEventListener('click', () => submitQuiz(false));
+
+    checkAnswerBtn.addEventListener('click', showAnswer);
 
     retryBtn.addEventListener('click', () => startQuiz(lastQuestionCount));
 
