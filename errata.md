@@ -4,7 +4,7 @@ Audit date: 2026-09-21.
 
 This audit covers every record in the `questionBank` array in `life-in-the-uk.html` (4,058 records). Each record was reviewed once, in order, for factual accuracy, answer-key correctness, uniqueness of the correct answer, sensible wording, and corrupted or stale text. Question numbers below are one-based array indices.
 
-The HTML page was not changed by this audit. This file lists question, selection, and answer-key issues individually. Explanation-only corrections are in suggestions.md.
+The HTML page was not changed by this audit. This file lists substantive question, selection, and answer-key issues individually. Explanation-only corrections are in `suggestions.md`; grammar, spelling, punctuation, and surface-level wording corrections are in `grammar.md`.
 
 ## Coverage
 
@@ -21,11 +21,11 @@ The HTML page was not changed by this audit. This file lists question, selection
 | Q3501-Q4058 | 558 | 91 |
 | **Total** | **4,058** | **482** |
 
-Explanation-only corrections moved to `suggestions.md`: 55. Question/selection/answer issues retained here: 427.
+Explanation-only corrections moved to `suggestions.md`: 55. Grammar, spelling, punctuation, and surface-level wording corrections moved to `grammar.md`: 99. Substantive question/selection/answer issues retained here: 328.
 
 ## Errata
 
-Question, answer key, and selections below are copied from the page questionBank. `[x]` marks a selection that matches the raw answer key. Suggestions below concern the question, selections, or answer key.
+Question, answer key, and selections below are copied from the page questionBank. `[x]` marks a selection that matches the raw answer key. Suggestions below concern substantive question, selection, or answer-key issues.
 
 ### Q377
 Question: `"In which year was the death penalty for murder suspended in Great Britain and effectively abolished?"`
@@ -61,14 +61,6 @@ Selections:
 - [x] `"False"`
 Suggestion: Mutual respect statement. The question contains the inserted phrase `No right to express a belief`, making it unintelligible. Suggested correction: use `Mutual respect and tolerance of different faiths and beliefs is a core principle of life in modern Britain.`
 
-### Q568
-Question: `"True or false: The Scotland is a Crown Dependency."`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"True"`
-- [x] `"False"`
-Suggestion: Scotland and Crown Dependencies. `The Scotland` is malformed. Suggested correction: `Scotland is not a Crown Dependency.`
-
 ### Q654
 Question: `"True or false: The prosecution must prove a criminal case Any suspicion by police."`
 Raw answer key: `"False"`
@@ -76,14 +68,6 @@ Selections:
 - [ ] `"True"`
 - [x] `"False"`
 Suggestion: Criminal burden of proof. The question is malformed as `The prosecution must prove a criminal case Any suspicion by police.` Suggested correction: `The prosecution must prove a criminal case beyond reasonable doubt.` and key `True`.
-
-### Q746
-Question: `"True or false: The Turner Prize takes its name from the British painter J."`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: Turner Prize. The artist's name is truncated to `J.` Suggested correction: identify the painter as `J. M. W. Turner`.
 
 ### Q819
 Question: `"By law, which TWO types of media have to give a balanced coverage of all political parties and equal time to rival viewpoints before an election?"`
@@ -105,16 +89,6 @@ Selections:
 - [x] `"Sikhs"`
 Suggestion: Diwali communities. Buddhists can celebrate Diwali in some traditions, while Jains are omitted, so the two-answer key is not unique. Suggested correction: ask for all applicable communities or provide unambiguous distractors.
 
-### Q854
-Question: `"Who was supported by clansmen from the Scottish highlands and raised and army in 1745?"`
-Raw answer key: `"Bonnie Prince Charlie"`
-Selections:
-- [x] `"Bonnie Prince Charlie"`
-- [ ] `"Robert Burns"`
-- [ ] `"Oliver Cromwell"`
-- [ ] `"Kenneth MacAlpin"`
-Suggestion: Bonnie Prince Charlie. `raised and army` is a typo. Suggested correction: `raised an army`.
-
 ### Q876
 Question: `"How often are general elections held in the UK?"`
 Raw answer key: `"Every 5 years"`
@@ -124,16 +98,6 @@ Selections:
 - [x] `"Every 5 years"`
 - [ ] `"Every 10 years"`
 Suggestion: General election frequency. Elections are not held exactly every five years. Suggested correction: ask for the maximum normal period between elections and key `Five years`.
-
-### Q881
-Question: `"Who was voted the greatest Briton of all time in 2002?"`
-Raw answer key: `"Winston Churchill"`
-Selections:
-- [ ] `"Isaac Newton"`
-- [x] `"Winston Churchill"`
-- [ ] `"Alexander Fleming"`
-- [ ] `"Mo Farat"`
-Suggestion: Mo Farah. The distractor `Mo Farat` is misspelled. Suggested correction: `Mo Farah`.
 
 ### Q891
 Question: `"Racial crime and smoking in public places are examples of:"`
@@ -180,16 +144,6 @@ Selections:
 - [ ] `"True"`
 - [x] `"False"`
 Suggestion: Individual electoral registration. The `False` key is outdated: individual registration applies in Scotland and Wales as well as England and Northern Ireland. Suggested correction: key the statement `True` or rewrite it to cover all four nations.
-
-### Q936
-Question: `"Which two political parties formed a coalition in 2010?"`
-Raw answer key: `["The Conservative Party","The Liberal Democrats Party"]`
-Selections:
-- [x] `"The Conservative Party"`
-- [ ] `"The Green Party"`
-- [ ] `"The Labour Party"`
-- [x] `"The Liberal Democrats Party"`
-Suggestion: Liberal Democrats. `The Liberal Democrats Party` is not the party's name. Suggested correction: use `The Liberal Democrats`.
 
 ### Q949
 Question: `"What was the biggest source of employment during the 18th century?"`
@@ -315,16 +269,6 @@ Selections:
 - [ ] `"False"`
 Suggestion: Broadcast impartiality. The `True` key endorses an equal-time claim that overstates UK broadcasting law. Suggested correction: use due impartiality/due weight wording or key the unqualified statement `False`.
 
-### Q1060
-Question: `"Who was the architect that rebuilt Saint Paul’s cathedral after the Great Fire in 1666?"`
-Raw answer key: `"Sir Christopher Wren"`
-Selections:
-- [ ] `"Robert Adam"`
-- [x] `"Sir Christopher Wren"`
-- [ ] `"Sir Norman Foster"`
-- [ ] `"Dame Zaha Hadid"`
-Suggestion: St Paul's Cathedral. The question contains literal backslashes before the apostrophe in `St Paul\\'s`. Suggested correction: replace the corrupted text with `St Paul's`.
-
 ### Q1114
 Question: `"How are the members of the Northern Ireland Parliament elected?"`
 Raw answer key: `"By a system of proportional representation"`
@@ -385,36 +329,6 @@ Selections:
 - [ ] `"Cork"`
 - [x] `"1928"`
 Suggestion: Women's voting rights. Men already had the vote at 21; 1928 gave women voting rights on the same terms. Suggested correction: ask when women were given the vote at 21, the same as men.
-
-### Q1225
-Question: `"Complete the statement: \"False. The Bill of Rights, _______, confirmed the rights of Parliament and the limits of the king’s power.\""`
-Raw answer key: `"1689"`
-Selections:
-- [ ] `"1514"`
-- [ ] `"1903"`
-- [x] `"1689"`
-- [ ] `"True"`
-Suggestion: Bill of Rights completions. Each stem has a stray `False.` before a true statement. Suggested correction: remove `False. ` from each question and explanation.
-
-### Q1226
-Question: `"Complete the statement: \"False. _______ of Rights, 1689, confirmed the rights of Parliament and the limits of the king’s power.\""`
-Raw answer key: `"The Bill"`
-Selections:
-- [x] `"The Bill"`
-- [ ] `"Internet"`
-- [ ] `"Dumfries"`
-- [ ] `"Napoleon"`
-Suggestion: Bill of Rights completions. Each stem has a stray `False.` before a true statement. Suggested correction: remove `False. ` from each question and explanation.
-
-### Q1227
-Question: `"Complete the statement: \"False. The _______ of Rights, 1689, confirmed the rights of Parliament and the limits of the king’s power.\""`
-Raw answer key: `"Bill"`
-Selections:
-- [x] `"Bill"`
-- [ ] `"Corn"`
-- [ ] `"Peso"`
-- [ ] `"Cork"`
-Suggestion: Bill of Rights completions. Each stem has a stray `False.` before a true statement. Suggested correction: remove `False. ` from each question and explanation.
 
 ### Q1244
 Question: `"Which of the following statements is TRUE?"`
@@ -565,36 +479,6 @@ Selections:
 - [ ] `"1960s"`
 - [x] `"Anglo"`
 Suggestion: Anglo-Saxon unification. The wording implies Alfred the Great united all Anglo-Saxon kingdoms. Suggested correction: say the kingdoms were gradually united after Alfred, chiefly under Athelstan, or rewrite the question.
-
-### Q1348
-Question: `"Complete the statement: \"In _______ there was another attempt to put a Stuart king back on the throne in place of George I’s son, George II. Charles Edward Stuart (Bonnie Prince Charlie), the grandson of James II, landed in Scotland. He was supported by clansmen from the Scottish highlands and raised and army.\""`
-Raw answer key: `"1745"`
-Selections:
-- [x] `"1745"`
-- [ ] `"Euro"`
-- [ ] `"1066"`
-- [ ] `"1925"`
-Suggestion: Bonnie Prince Charlie. Every variant says `raised and army`. Suggested correction: `raised an army`.
-
-### Q1349
-Question: `"Complete the statement: \"In 1745 there was another attempt to put a Stuart king back on the throne in place of George I’s son, George II. _______ (Bonnie Prince Charlie), the grandson of James II, landed in Scotland. He was supported by clansmen from the Scottish highlands and raised and army.\""`
-Raw answer key: `"Charles Edward Stuart"`
-Selections:
-- [ ] `"The Foreign Secretary"`
-- [ ] `"Sense and Sensibility"`
-- [x] `"Charles Edward Stuart"`
-- [ ] `"King Alfred the Great"`
-Suggestion: Bonnie Prince Charlie. Every variant says `raised and army`. Suggested correction: `raised an army`.
-
-### Q1350
-Question: `"Complete the statement: \"In 1745 there was another attempt to put a Stuart king back on the throne in place of George I’s son, George II. Charles Edward Stuart (_______), the grandson of James II, landed in Scotland. He was supported by clansmen from the Scottish highlands and raised and army.\""`
-Raw answer key: `"Bonnie Prince Charlie"`
-Selections:
-- [ ] `"The Foreign Secretary"`
-- [x] `"Bonnie Prince Charlie"`
-- [ ] `"55% of the population"`
-- [ ] `"The Battle of Britain"`
-Suggestion: Bonnie Prince Charlie. Every variant says `raised and army`. Suggested correction: `raised an army`.
 
 ### Q1351
 Question: `"Which of the following statements is TRUE?"`
@@ -785,36 +669,6 @@ Selections:
 - [x] `"National Parks are areas of protected countryside that everyone can visit, and where people live, work and look after..."`
 Suggestion: National Parks. The keyed option is truncated and the record has only three options. Suggested correction: restore the complete answer about protected countryside.
 
-### Q1537
-Question: `"Complete the statement: \"False. There is no established Church in Wales or _______.\""`
-Raw answer key: `"Northern Ireland"`
-Selections:
-- [ ] `"Sir Rex Harrison"`
-- [ ] `"Chariots of Fire"`
-- [ ] `"Harold Macmillan"`
-- [x] `"Northern Ireland"`
-Suggestion: Established Church completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix or convert the records into true/false questions.
-
-### Q1538
-Question: `"Complete the statement: \"False. There is no established _______ in Wales or Northern Ireland.\""`
-Raw answer key: `"Church"`
-Selections:
-- [x] `"Church"`
-- [ ] `"Age UK"`
-- [ ] `"Turkey"`
-- [ ] `"Bronze"`
-Suggestion: Established Church completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix or convert the records into true/false questions.
-
-### Q1539
-Question: `"Complete the statement: \"False. There is no established Church in _______ or Northern Ireland.\""`
-Raw answer key: `"Wales"`
-Selections:
-- [x] `"Wales"`
-- [ ] `"1970s"`
-- [ ] `"Devon"`
-- [ ] `"India"`
-Suggestion: Established Church completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix or convert the records into true/false questions.
-
 ### Q1547
 Question: `"Which of the following statements is TRUE?"`
 Raw answer key: `"The correct answer is Charles I."`
@@ -824,26 +678,6 @@ Selections:
 - [ ] `"The correct answer is James VII."`
 - [ ] `"The correct answer is James I."`
 Suggestion: Self-referential true statements. The options say `The correct answer is...` instead of presenting facts. Suggested correction: restore the underlying substantive question and factual alternatives.
-
-### Q1558
-Question: `"Complete the statement: \"False. _______ uses a system called ‘individual registration’ and all those entitled to vote must complete their own registration form.\""`
-Raw answer key: `"Northern Ireland"`
-Selections:
-- [ ] `"Trafalgar Square"`
-- [x] `"Northern Ireland"`
-- [ ] `"25th of December"`
-- [ ] `"A District Judge"`
-Suggestion: Individual registration completions. The true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1559
-Question: `"Complete the statement: \"False. Northern _______ uses a system called ‘individual registration’ and all those entitled to vote must complete their own registration form.\""`
-Raw answer key: `"Ireland"`
-Selections:
-- [ ] `"In 1943"`
-- [ ] `"Shelter"`
-- [ ] `"Thistle"`
-- [x] `"Ireland"`
-Suggestion: Individual registration completions. The true statement is prefixed with `False.`. Suggested correction: remove the prefix.
 
 ### Q1560
 Question: `"According to the Life in the UK handbook, scotland and Wales use a system called ‘individual registration’ where all those entitled to vote must complete their own registration form.?"`
@@ -895,16 +729,6 @@ Selections:
 - [ ] `"Hannukah"`
 Suggestion: Domesday Book and Bayeux Tapestry. These are isolated noun fragments with no complete proposition. Suggested correction: ask which two sources provide evidence about the Norman Conquest.
 
-### Q1597
-Question: `"Complete the statement: \"As a _______ citizen you should respect and obey the law and look after the area in which you live and the environment are the correct answers.\""`
-Raw answer key: `"British"`
-Selections:
-- [ ] `"Physics"`
-- [x] `"British"`
-- [ ] `"Knights"`
-- [ ] `"In 1918"`
-Suggestion: British citizen completion. The completed text contains the orphaned phrase `are the correct answers`. Suggested correction: ask which two responsibilities a British citizen should have.
-
 ### Q1598
 Question: `"Which of the following statements is TRUE?"`
 Raw answer key: `"As a British citizen you should respect and obey the law and look after the area in which you live and the environment..."`
@@ -925,36 +749,6 @@ Selections:
 - [x] `"Look after the area in which you live and the environment"`
 Suggestion: British citizen responsibilities. The key contains two answers but the question does not say two answers are required. Suggested correction: explicitly ask for `Which TWO responsibilities...`.
 
-### Q1603
-Question: `"Complete the statement: \"False. The Bill of Rights, _______, confirmed the rights of Parliament and the limits of the king’s power.\""`
-Raw answer key: `"1689"`
-Selections:
-- [ ] `"1928"`
-- [ ] `"1514"`
-- [x] `"1689"`
-- [ ] `"Soho"`
-Suggestion: Bill of Rights completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1604
-Question: `"Complete the statement: \"False. _______ of Rights, 1689, confirmed the rights of Parliament and the limits of the king’s power.\""`
-Raw answer key: `"The Bill"`
-Selections:
-- [ ] `"District"`
-- [ ] `"Football"`
-- [ ] `"Vaisakhi"`
-- [x] `"The Bill"`
-Suggestion: Bill of Rights completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1605
-Question: `"Complete the statement: \"False. The _______ of Rights, 1689, confirmed the rights of Parliament and the limits of the king’s power.\""`
-Raw answer key: `"Bill"`
-Selections:
-- [ ] `"1940"`
-- [ ] `"Gold"`
-- [ ] `"1066"`
-- [x] `"Bill"`
-Suggestion: Bill of Rights completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
 ### Q1615
 Question: `"Which of the following statements is TRUE?"`
 Raw answer key: `"The correct answer is the MacDonalds of Glencoe."`
@@ -974,36 +768,6 @@ Selections:
 - [ ] `"1835"`
 - [x] `"True"`
 Suggestion: Slavery Abolition Act. The statement says the 1833 Act abolished slavery throughout the Empire; it applied to most colonies and took effect in 1834. Suggested correction: qualify the scope/date and add a valid true/false choice.
-
-### Q1628
-Question: `"Complete the statement: \"False. _______ are a British overseas territory. They are also linked to the UK but are not part of it.\""`
-Raw answer key: `"The Falkland Islands"`
-Selections:
-- [ ] `"South west of Europe"`
-- [ ] `"15- and 16-year-olds"`
-- [ ] `"Friends of the Earth"`
-- [x] `"The Falkland Islands"`
-Suggestion: British Overseas Territories completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1629
-Question: `"Complete the statement: \"False. The _______ Islands are a British overseas territory. They are also linked to the UK but are not part of it.\""`
-Raw answer key: `"Falkland"`
-Selections:
-- [ ] `"Dumfries"`
-- [x] `"Falkland"`
-- [ ] `"A plague"`
-- [ ] `"Security"`
-Suggestion: British Overseas Territories completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1630
-Question: `"Complete the statement: \"False. The Falkland _______ are a British overseas territory. They are also linked to the UK but are not part of it.\""`
-Raw answer key: `"Islands"`
-Selections:
-- [ ] `"Measles"`
-- [x] `"Islands"`
-- [ ] `"Hadrian"`
-- [ ] `"Ireland"`
-Suggestion: British Overseas Territories completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
 
 ### Q1631
 Question: `"Complete the statement: \"_______ of Marston Moor and Naseby.\""`
@@ -1305,36 +1069,6 @@ Selections:
 - [ ] `"Austria"`
 Suggestion: MPs and surgeries. The true statement is prefixed with `False.` and refers to UK MEPs, which no longer exist. Suggested correction: remove the prefix and use current representatives.
 
-### Q1786
-Question: `"Complete the statement: \"False. There is no established Church in Wales or _______.\""`
-Raw answer key: `"Northern Ireland"`
-Selections:
-- [ ] `"26th of December"`
-- [x] `"Northern Ireland"`
-- [ ] `"The Anglo-Saxons"`
-- [ ] `"The owner’s name"`
-Suggestion: Established Church completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1787
-Question: `"Complete the statement: \"False. There is no established _______ in Wales or Northern Ireland.\""`
-Raw answer key: `"Church"`
-Selections:
-- [ ] `"Russia"`
-- [x] `"Church"`
-- [ ] `"Health"`
-- [ ] `"A fire"`
-Suggestion: Established Church completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1788
-Question: `"Complete the statement: \"False. There is no established Church in _______ or Northern Ireland.\""`
-Raw answer key: `"Wales"`
-Selections:
-- [ ] `"Poems"`
-- [x] `"Wales"`
-- [ ] `"Jokes"`
-- [ ] `"Asian"`
-Suggestion: Established Church completions. Each true statement is prefixed with `False.`. Suggested correction: remove the prefix.
-
 ### Q1795
 Question: `"Which of the following statements is TRUE?"`
 Raw answer key: `"There are public holidays each year called bank holidays, when banks and many other businesses are closed for the day."`
@@ -1405,36 +1139,6 @@ Selections:
 - [ ] `"1588"`
 Suggestion: Senedd membership and elections. The records confuse the Welsh Government with the Senedd, use `SMs`, give 60 members, and say elections occur every four years. Suggested correction: refer to the Senedd and `MSs`, update the membership/election details, and remove the executive/legislature confusion.
 
-### Q1807
-Question: `"Complete the statement: \"False. Members of the public are not allowed in _______, and the name or photographs of the accused young person cannot be published in newspapers or used by the media.\""`
-Raw answer key: `"Youth Courts"`
-Selections:
-- [x] `"Youth Courts"`
-- [ ] `"Powis Castle"`
-- [ ] `"The Daffodil"`
-- [ ] `"Lincolnshire"`
-Suggestion: Youth Courts. The true statement that members of the public are not generally admitted is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1808
-Question: `"Complete the statement: \"False. Members of the public are not allowed in _______ Courts, and the name or photographs of the accused young person cannot be published in newspapers or used by the media.\""`
-Raw answer key: `"Youth"`
-Selections:
-- [ ] `"1970s"`
-- [x] `"Youth"`
-- [ ] `"Radar"`
-- [ ] `"Rugby"`
-Suggestion: Youth Courts. The true statement that members of the public are not generally admitted is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1809
-Question: `"Complete the statement: \"False. Members of the public are not allowed in Youth _______, and the name or photographs of the accused young person cannot be published in newspapers or used by the media.\""`
-Raw answer key: `"Courts"`
-Selections:
-- [ ] `"Paella"`
-- [x] `"Courts"`
-- [ ] `"Age UK"`
-- [ ] `"A fire"`
-Suggestion: Youth Courts. The true statement that members of the public are not generally admitted is prefixed with `False.`. Suggested correction: remove the prefix.
-
 ### Q1827
 Question: `"Complete the statement: \"Emmeline Pankhurst she set up the women’s Franchise League in _______, which fought to get the vote in local elections for married women. In 1903 she helped found the Women’s Social and Political Union (WSPU). This was the first group whose members were called ‘suffragettes’. The group used civil disobedience as part of their protest to gain the vote for women. In 1918, women over the age of 30 were given voting rights and the right to stand for Parliament, partly in recognition of the contribution women made to the war effort during the First World War.\""`
 Raw answer key: `"1889"`
@@ -1495,36 +1199,6 @@ Selections:
 - [ ] `"The Grand National"`
 Suggestion: Principia translation. The title is rendered as `Mathematical Principle`; the accepted translation is `Mathematical Principles of Natural Philosophy`. Suggested correction: use the plural in the questions, options, keys, and explanations.
 
-### Q1836
-Question: `"Complete the statement: \"The World War I ended in _______.\""`
-Raw answer key: `"1918"`
-Selections:
-- [ ] `"Fife"`
-- [ ] `"Peso"`
-- [x] `"1918"`
-- [ ] `"Lent"`
-Suggestion: World War I. The generated text produces `The World War I ended...`. Suggested correction: use `World War I ended in 1918` or `The _______ War ended in 1918`.
-
-### Q1837
-Question: `"Complete the statement: \"_______ I ended in 1918.\""`
-Raw answer key: `"The World War"`
-Selections:
-- [ ] `"A music award"`
-- [x] `"The World War"`
-- [ ] `"An earthquake"`
-- [ ] `"Tilda Swinton"`
-Suggestion: World War I. The generated text produces `The World War I ended...`. Suggested correction: use `World War I ended in 1918` or `The _______ War ended in 1918`.
-
-### Q1838
-Question: `"Complete the statement: \"The _______ War I ended in 1918.\""`
-Raw answer key: `"World"`
-Selections:
-- [x] `"World"`
-- [ ] `"Boers"`
-- [ ] `"Sport"`
-- [ ] `"Radio"`
-Suggestion: World War I. The generated text produces `The World War I ended...`. Suggested correction: use `World War I ended in 1918` or `The _______ War ended in 1918`.
-
 ### Q1839
 Question: `"Complete the statement: \"_______ built a wall in the north of England to keep out the Picts (ancestors of the Scottish people).\""`
 Raw answer key: `"The Emperor Hadrian"`
@@ -1575,36 +1249,6 @@ Selections:
 - [x] `"True"`
 Suggestion: Broadcast coverage true/false. The statement says equal time is required and has no `False` option. Suggested correction: rewrite using due impartiality or add `False` for the unqualified claim.
 
-### Q1881
-Question: `"Complete the statement: \"False. _______ has been suspended on a few occasions.\""`
-Raw answer key: `"The Northern Ireland Assembly"`
-Selections:
-- [ ] `"After the last Roman invasion"`
-- [x] `"The Northern Ireland Assembly"`
-- [ ] `"A contract from your employer"`
-- [ ] `"Donating blood to help people"`
-Suggestion: Northern Ireland Assembly. The true statement that the Assembly has been suspended is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1882
-Question: `"Complete the statement: \"False. The _______ Ireland Assembly has been suspended on a few occasions.\""`
-Raw answer key: `"Northern"`
-Selections:
-- [ ] `"Henry IV"`
-- [ ] `"Aberdeen"`
-- [x] `"Northern"`
-- [ ] `"The rose"`
-Suggestion: Northern Ireland Assembly. The true statement that the Assembly has been suspended is prefixed with `False.`. Suggested correction: remove the prefix.
-
-### Q1883
-Question: `"Complete the statement: \"False. The Northern _______ Assembly has been suspended on a few occasions.\""`
-Raw answer key: `"Ireland"`
-Selections:
-- [x] `"Ireland"`
-- [ ] `"MacBeth"`
-- [ ] `"Andorra"`
-- [ ] `"In 1922"`
-Suggestion: Northern Ireland Assembly. The true statement that the Assembly has been suspended is prefixed with `False.`. Suggested correction: remove the prefix.
-
 ### Q1893
 Question: `"Complete the statement: \"Anyone can make a complaint about the police by going to a police station and writing to the _______ of the police force involved. Complaints can also be made to an independent body: the Independent Police Complaints Commission in England and Wales, the Police Complaints Commissioner for Scotland or the Police Ombudsman for Northern Ireland.\""`
 Raw answer key: `"Chief Constable"`
@@ -1634,36 +1278,6 @@ Selections:
 - [x] `"Police Complaints Commissioner"`
 - [ ] `"Monitoring student’s behaviour"`
 Suggestion: Police complaint bodies. The named Independent Police Complaints Commission and Police Complaints Commissioner are obsolete. Suggested correction: use current complaint bodies and names.
-
-### Q1902
-Question: `"Complete the statement: \"In _______, a great fire destroyed much of the city, including many churches and St Paul’s Cathedral. London was rebuilt with a new St Paul\\\\\\\\\\\\\\'s, which was designed by a famous architect, Sir Christopher Wren.\""`
-Raw answer key: `"1666"`
-Selections:
-- [ ] `"1939"`
-- [ ] `"Fife"`
-- [x] `"1666"`
-- [ ] `"1941"`
-Suggestion: St Paul's Cathedral. The text contains visible repeated backslashes before the apostrophe. Suggested correction: replace `St Paul\\'s` with `St Paul's`.
-
-### Q1903
-Question: `"Complete the statement: \"In 1666, a great fire destroyed much of the city, including many churches and _______’s Cathedral. London was rebuilt with a new St Paul\\\\\\\\\\\\\\'s, which was designed by a famous architect, Sir Christopher Wren.\""`
-Raw answer key: `"St Paul"`
-Selections:
-- [ ] `"Hadrian"`
-- [x] `"St Paul"`
-- [ ] `"Leprosy"`
-- [ ] `"A flood"`
-Suggestion: St Paul's Cathedral. The text contains visible repeated backslashes before the apostrophe. Suggested correction: replace `St Paul\\'s` with `St Paul's`.
-
-### Q1904
-Question: `"Complete the statement: \"In 1666, a great fire destroyed much of the city, including many churches and St Paul’s Cathedral. London was rebuilt with a new St Paul\\\\\\\\\\\\\\'s, which was designed by a famous architect, _______.\""`
-Raw answer key: `"Sir Christopher Wren"`
-Selections:
-- [x] `"Sir Christopher Wren"`
-- [ ] `"17- and 18-year-olds"`
-- [ ] `"The Giant’s Causeway"`
-- [ ] `"Friends of the Earth"`
-Suggestion: St Paul's Cathedral. The text contains visible repeated backslashes before the apostrophe. Suggested correction: replace `St Paul\\'s` with `St Paul's`.
 
 ### Q1914
 Question: `"Complete the statement: \"It is a criminal offence to sell alcohol to any_______ who is under 18 or to buy alcohol for people who are under the age of 18. (There is one exception: people aged 16 or over can drink alcohol with a meal in a hotel or restaurant).\""`
@@ -1745,66 +1359,6 @@ Selections:
 - [ ] `"Radio"`
 Suggestion: Royal Air Force. The records are self-referential `The correct answer is...` fragments. Suggested correction: ask a substantive question such as `What is the name of the UK's air force?` and key `Royal Air Force`.
 
-### Q2014
-Question: `"According to the Life in the UK handbook, in the UK, you have to be 21 years old to be able to vote in a general election.?"`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"Asian"`
-- [ ] `"1980s"`
-- [ ] `"Latin"`
-- [x] `"False"`
-Suggestion: Stray punctuation. These questions contain a period before the question mark. Suggested correction: remove the stray period.
-
-### Q2045
-Question: `"Complete the statement: \"_______’s day, patron of Northern Ireland is celebrated on the 17th of March.\""`
-Raw answer key: `"St Patrick"`
-Selections:
-- [ ] `"Literature"`
-- [ ] `"Protestant"`
-- [x] `"St Patrick"`
-- [ ] `"The Mikado"`
-Suggestion: St Patrick's Day. The wording incorrectly apposes `patron` to the day and omits `saint`. Suggested correction: ask when St Patrick's Day, associated with Ireland's patron saint, is celebrated.
-
-### Q2054
-Question: `"Complete the statement: \"British actors to have won Oscars include _______, Sir Antony Hopkins, Dame Judi Dench, Kate Winslet and Tilda Swinton. Emily Watson has not won an Oscar yet.\""`
-Raw answer key: `"Colin Firth"`
-Selections:
-- [ ] `"Fraserburgh"`
-- [ ] `"The Vikings"`
-- [x] `"Colin Firth"`
-- [ ] `"The Thistle"`
-Suggestion: Anthony Hopkins. The actor's name is misspelled `Antony Hopkins`. Suggested correction: `Anthony Hopkins`.
-
-### Q2055
-Question: `"Complete the statement: \"British actors to have won Oscars include Colin Firth, _______, Dame Judi Dench, Kate Winslet and Tilda Swinton. Emily Watson has not won an Oscar yet.\""`
-Raw answer key: `"Sir Antony Hopkins"`
-Selections:
-- [ ] `"The Rolling Stones"`
-- [ ] `"Magistrates’ Court"`
-- [ ] `"The Prime Minister"`
-- [x] `"Sir Antony Hopkins"`
-Suggestion: Anthony Hopkins. The actor's name is misspelled `Antony Hopkins`. Suggested correction: `Anthony Hopkins`.
-
-### Q2056
-Question: `"Complete the statement: \"British actors to have won Oscars include Colin Firth, Sir Antony Hopkins, _______, Kate Winslet and Tilda Swinton. Emily Watson has not won an Oscar yet.\""`
-Raw answer key: `"Dame Judi Dench"`
-Selections:
-- [ ] `"The Steam Power"`
-- [ ] `"A theatre award"`
-- [ ] `"Valentine’s Day"`
-- [x] `"Dame Judi Dench"`
-Suggestion: Anthony Hopkins. The actor's name is misspelled `Antony Hopkins`. Suggested correction: `Anthony Hopkins`.
-
-### Q2089
-Question: `"According to the Life in the UK handbook, the system of government in the UK is a parliamentary democracy.?"`
-Raw answer key: `"True"`
-Selections:
-- [ ] `"Oats"`
-- [ ] `"1903"`
-- [ ] `"1949"`
-- [x] `"True"`
-Suggestion: Stray punctuation. These questions contain a period before the question mark. Suggested correction: remove the stray period.
-
 ### Q2090
 Question: `"Which of the following statements is TRUE?"`
 Raw answer key: `"Ulster fry is the correct answer."`
@@ -1885,46 +1439,6 @@ Selections:
 - [ ] `"William of Orange"`
 Suggestion: Ernest Rutherford and the atomic bomb. The records imply Rutherford took part in the Manhattan Project; he died in 1937. Suggested correction: separate his 1917 nuclear experiment from the later Manhattan Project.
 
-### Q2145
-Question: `"Complete the statement: \"The song _______, which is sung by people in the UK and other countries when they are celebrating the New Year (or Hogmanay as it is called in Scotland).\""`
-Raw answer key: `"Auld Lang Syne"`
-Selections:
-- [x] `"Auld Lang Syne"`
-- [ ] `"Ellie Simmonds"`
-- [ ] `"The television"`
-- [ ] `"Civil offences"`
-Suggestion: Auld Lang Syne. The questions are sentence fragments with no main verb. Suggested correction: use `The song Auld Lang Syne is sung ... when celebrating the New Year.`
-
-### Q2146
-Question: `"Complete the statement: \"The song Auld Lang Syne, which is sung by people in the UK and other countries when they are celebrating the _______ (or Hogmanay as it is called in Scotland).\""`
-Raw answer key: `"New Year"`
-Selections:
-- [ ] `"Dumfries"`
-- [ ] `"Hannukah"`
-- [ ] `"Galloway"`
-- [x] `"New Year"`
-Suggestion: Auld Lang Syne. The questions are sentence fragments with no main verb. Suggested correction: use `The song Auld Lang Syne is sung ... when celebrating the New Year.`
-
-### Q2147
-Question: `"Complete the statement: \"The song _______ Lang Syne, which is sung by people in the UK and other countries when they are celebrating the New Year (or Hogmanay as it is called in Scotland).\""`
-Raw answer key: `"Auld"`
-Selections:
-- [ ] `"1940"`
-- [x] `"Auld"`
-- [ ] `"1066"`
-- [ ] `"1466"`
-Suggestion: Auld Lang Syne. The questions are sentence fragments with no main verb. Suggested correction: use `The song Auld Lang Syne is sung ... when celebrating the New Year.`
-
-### Q2166
-Question: `"According to the Life in the UK handbook, the members of the House of Lords, known as peers, are elected by the people.?"`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"Rugby"`
-- [ ] `"Radio"`
-- [ ] `"Crime"`
-- [x] `"False"`
-Suggestion: Stray punctuation. These questions contain a period before the question mark. Suggested correction: remove the stray period.
-
 ### Q2167
 Question: `"Complete the statement: \"In _______ the Emancipation Act abolished slavery throughout the British Empire.\""`
 Raw answer key: `"1833"`
@@ -1954,16 +1468,6 @@ Selections:
 - [ ] `"Auld Lang Syne"`
 - [ ] `"Sir Ian Botham"`
 Suggestion: Slavery Abolition Act. The wording says the Emancipation Act abolished slavery throughout the Empire in 1833. Suggested correction: use `Slavery Abolition Act 1833`, state that it applied to most colonies, and note that it came into force in 1834.
-
-### Q2176
-Question: `"According to the Life in the UK handbook, anyone who is violent towards their partner – whether they are a man or a woman, married or living together – can be prosecuted.?"`
-Raw answer key: `"True"`
-Selections:
-- [ ] `"Golf"`
-- [ ] `"1066"`
-- [ ] `"1833"`
-- [x] `"True"`
-Suggestion: Stray punctuation. These questions contain a period before the question mark. Suggested correction: remove the stray period.
 
 ### Q2188
 Question: `"Complete the statement: \"Some of the most commercially successful films of all time, including the two highest-grossing film franchises (_______ and James Bond), have been produced in the UK.\""`
@@ -2185,56 +1689,6 @@ Selections:
 - [x] `"In the middle of the century the potato crop failed, and Ireland suffered a famine. A million people died from disease..."`
 Suggestion: Irish potato famine. The century is missing and Q2249 is truncated. Suggested correction: specify the middle of the 19th century and restore the complete answer ending in disease and starvation.
 
-### Q2276
-Question: `"According to the Life in the UK handbook, the Speaker is an MP, he or she represents a constituency and deals with the constituents.?"`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"1514"`
-- [ ] `"Golf"`
-- [ ] `"Gold"`
-Suggestion: Stray punctuation. These questions contain a period before the question mark. Suggested correction: remove the stray period.
-
-### Q2280
-Question: `"Complete the statement: \"_______’s most famous plays include MacBeth.\""`
-Raw answer key: `"William Shakespeare"`
-Selections:
-- [ ] `"January or February"`
-- [x] `"William Shakespeare"`
-- [ ] `"Edward I of England"`
-- [ ] `"Stratford-upon-Avon"`
-Suggestion: Macbeth. The play is repeatedly spelled `MacBeth`. Suggested correction: `Macbeth`.
-
-### Q2281
-Question: `"Complete the statement: \"William _______’s most famous plays include MacBeth.\""`
-Raw answer key: `"Shakespeare"`
-Selections:
-- [ ] `"King Arthur"`
-- [x] `"Shakespeare"`
-- [ ] `"A superhero"`
-- [ ] `"Isle of Man"`
-Suggestion: Macbeth. The play is repeatedly spelled `MacBeth`. Suggested correction: `Macbeth`.
-
-### Q2282
-Question: `"Which of the following statements is TRUE?"`
-Raw answer key: `"William Shakespeare’s most famous plays include MacBeth."`
-Selections:
-- [x] `"William Shakespeare’s most famous plays include MacBeth."`
-- [ ] `"William Shakespeare’s most famous plays include The Mikado."`
-- [ ] `"William Shakespeare’s most famous plays include The Canterbury Tales."`
-- [ ] `"William Shakespeare’s most famous plays include Doctor Faustus."`
-Suggestion: Macbeth. The play is repeatedly spelled `MacBeth`. Suggested correction: `Macbeth`.
-
-### Q2289
-Question: `"According to the Life in the UK handbook, in Northern Ireland, up to three specially trained magistrates or a District Judge are required for Youth Court cases.?"`
-Raw answer key: `"True"`
-Selections:
-- [ ] `"1466"`
-- [x] `"True"`
-- [ ] `"Gold"`
-- [ ] `"Fife"`
-Suggestion: Stray punctuation. These questions contain a period before the question mark. Suggested correction: remove the stray period.
-
 ### Q2302
 Question: `"Which of the following statements is TRUE?"`
 Raw answer key: `"Opposition MPs form the shadow cabinet and their role is to challenge the government and put forward alternative..."`
@@ -2244,16 +1698,6 @@ Selections:
 - [x] `"Opposition MPs form the shadow cabinet and their role is to challenge the government and put forward alternative..."`
 - [ ] `"Opposition MPs form the Cavaliers and their role is to challenge the government and put forward alternative policies."`
 Suggestion: Shadow cabinet. The keyed statement ends in `alternative...`. Suggested correction: restore the full sentence about opposition MPs challenging government and proposing alternative policies.
-
-### Q2333
-Question: `"What is the name of the best preserved prehistoric village in northern Europe and which origin traces back to the Stone Age?"`
-Raw answer key: `"Skara Brae"`
-Selections:
-- [ ] `"Maiden"`
-- [x] `"Skara Brae"`
-- [ ] `"Stonehenge"`
-- [ ] `"Bayeux"`
-Suggestion: Skara Brae. The question is ungrammatical and unclear. Suggested correction: `What is the name of the best-preserved prehistoric village in northern Europe, dating from the Stone Age?`
 
 ### Q2339
 Question: `"Who is married to the King of the United Kingdom?"`
@@ -2285,26 +1729,6 @@ Selections:
 - [x] `"Over 75"`
 Suggestion: Free TV licence. Being 75 or over is insufficient without Pension Credit. Suggested correction: require age 75+ and receipt of Pension Credit.
 
-### Q2346
-Question: `"When did the Conservative government called a referendum on the UK’s membership of the European Union?"`
-Raw answer key: `"23rd June 2016"`
-Selections:
-- [ ] `"23rd July 2016"`
-- [x] `"23rd June 2016"`
-- [ ] `"23rd June 2015"`
-- [ ] `"23rd July 2015"`
-Suggestion: Grammar. `When did ... called` should be `When did ... call`.
-
-### Q2356
-Question: `"What name is given to the day when people play jokes on each other until midday?"`
-Raw answer key: `"April’s Fool Day"`
-Selections:
-- [ ] `"Remembrance Day"`
-- [x] `"April’s Fool Day"`
-- [ ] `"Halloween"`
-- [ ] `"Valentine’s Day"`
-Suggestion: April Fool's Day. `April's Fool Day` is not the standard name. Suggested correction: `April Fool's Day` or `April Fools' Day`.
-
 ### Q2361
 Question: `"What is the relationship between the monarch and the government?"`
 Raw answer key: `"Advise, warn and encourage the government’s decisions"`
@@ -2314,16 +1738,6 @@ Selections:
 - [ ] `"Advise, encourage and approve the government’s decisions"`
 - [ ] `"Advise and approve the government’s decisions"`
 Suggestion: Monarch and government. The answer says the monarch encourages the government's decisions. Suggested correction: say the monarch advises, warns, and encourages the Prime Minister/government.
-
-### Q2364
-Question: `"Which British scientist was awarded a Nobel Prize for discovering the structure of the DNA molecule?"`
-Raw answer key: `"Francis Crick"`
-Selections:
-- [ ] `"Alan Turing"`
-- [ ] `"Sir Frank Whittle"`
-- [ ] `"Sir Christopher Cockrell"`
-- [x] `"Francis Crick"`
-Suggestion: Christopher Cockerell. `Cockrell` is misspelled. Suggested correction: `Cockerell`.
 
 ### Q2367
 Question: `"Which of the following national galleries is NOT located in London?"`
@@ -2375,16 +1789,6 @@ Selections:
 - [x] `"John Major"`
 Suggestion: John Major. `British Minister` is not a defined office. Suggested correction: ask `Who was Prime Minister after Margaret Thatcher?`
 
-### Q2400
-Question: `"In which TWO movie categories does Britain continue to be particularly strong at?"`
-Raw answer key: `["Special effects movies","Animation movies"]`
-Selections:
-- [x] `"Special effects movies"`
-- [ ] `"Action movies"`
-- [ ] `"Thrillers"`
-- [x] `"Animation movies"`
-Suggestion: Grammar. `strong at` should be `strong in`.
-
 ### Q2412
 Question: `"What is the first verse of the National Anthem of the UK ‘God save the King’?"`
 Raw answer key: `"God save our gracious King!"`
@@ -2414,26 +1818,6 @@ Selections:
 - [x] `"By phoning their constituency office"`
 - [ ] `"Through facebook"`
 Suggestion: Contacting MPs. The question allows Facebook as a plausible contact route while asking for only two, and the stored contact details may be stale. Suggested correction: specify formal parliamentary contact methods, replace the Facebook distractor, and verify the contact details.
-
-### Q2434
-Question: `"What did the’Bill of Rights’ confirm in 1689?"`
-Raw answer key: `"The rights of Parliament and the limits of the king’s power"`
-Selections:
-- [ ] `"Women’s right to vote"`
-- [x] `"The rights of Parliament and the limits of the king’s power"`
-- [ ] `"The supreme power of the king"`
-- [ ] `"The freedom of speech"`
-Suggestion: Bill of Rights punctuation. Spacing and quotation marks around `the Bill of Rights` are malformed. Suggested correction: normalize the phrase and punctuation.
-
-### Q2435
-Question: `"Who designed the Clifton Suspension Bridge located over the Avon George?"`
-Raw answer key: `"Isambard Kingdom Brunel"`
-Selections:
-- [ ] `"Sir Norman Foster"`
-- [x] `"Isambard Kingdom Brunel"`
-- [ ] `"Richard Arkwright"`
-- [ ] `"Robert Adam"`
-Suggestion: Avon Gorge. `Avon George` is a place-name typo. Suggested correction: `Avon Gorge`.
 
 ### Q2441
 Question: `"What is the name of the building where the Welsh government members meet?"`
@@ -2475,14 +1859,6 @@ Selections:
 - [ ] `"The RSPB"`
 Suggestion: Domestic-violence help. `Citizens Advise Bureau` is misspelled, and the broad question makes multiple options defensible. Suggested correction: use `Citizens Advice` and ask for a specifically named source or make all applicable answers explicit.
 
-### Q2463
-Question: `"The Welsh dragon on the Welsh flag does not appear on the Union Flag because, when the first Union Flag was created in 1606 from the flags of Scotland and England, the Principality of Wales was already untied with England:"`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: United with England. The explanations say `untied` instead of `united`. Suggested correction: replace `untied` with `united` or `incorporated`.
-
 ### Q2465
 Question: `"What was the population of the UK in 1801?"`
 Raw answer key: `"8 million"`
@@ -2492,26 +1868,6 @@ Selections:
 - [ ] `"10 million"`
 - [ ] `"12 million"`
 Suggestion: UK population in 1801. The answer `8 million` describes a narrower territory, not the UK including Ireland. Suggested correction: ask for England/Great Britain or use the appropriate UK figure of about 16 million.
-
-### Q2466
-Question: `"Where is there UK geographically located?"`
-Raw answer key: `"In the north west of Europe"`
-Selections:
-- [ ] `"In the north east of Europe"`
-- [ ] `"In the south east of Europe"`
-- [x] `"In the north west of Europe"`
-- [ ] `"In the south west of Europe"`
-Suggestion: UK geography. `Where is there UK geographically located?` is malformed. Suggested correction: `Where is the UK geographically located?`
-
-### Q2469
-Question: `"Which Scottish physician and researcher co-discovered the insulin used to treat diabetes?"`
-Raw answer key: `"John McLeod"`
-Selections:
-- [ ] `"Francis Crick"`
-- [ ] `"Sir Robert Watson-Watt"`
-- [x] `"John McLeod"`
-- [ ] `"John Logie Baird"`
-Suggestion: John MacLeod. `John McLeod` is misspelled for the insulin co-discoverer. Suggested correction: `John MacLeod`.
 
 ### Q2480
 Question: `"When was the Northern Ireland Parliament established for the first time?"`
@@ -2562,16 +1918,6 @@ Selections:
 - [ ] `"The United Kingdom Act"`
 - [ ] `"The Act of Great Britain"`
 Suggestion: Creation of the United Kingdom. The question conflates the 1800 Act creating the United Kingdom of Great Britain and Ireland with later naming changes. Suggested correction: ask separately about the 1707 Kingdom of Great Britain, the 1800 Act, or the 1927 current name.
-
-### Q2533
-Question: `"Who composed a suite of pieces themed around the planets and the solar system called ‘The Planets’?"`
-Raw answer key: `"Gustav Holst"`
-Selections:
-- [ ] `"The Edward Elgar"`
-- [ ] `"George Frederick Handel"`
-- [x] `"Gustav Holst"`
-- [ ] `"Sir William Walton"`
-Suggestion: Edward Elgar. `The Edward Elgar` is malformed. Suggested correction: `Edward Elgar` or `Sir Edward Elgar`.
 
 ### Q2534
 Question: `"What was the population of the UK in 1998?"`
@@ -2633,16 +1979,6 @@ Selections:
 - [ ] `"Swansea"`
 Suggestion: Senedd building. The question calls the Senedd building the Welsh Government building. Suggested correction: distinguish the Senedd, the Welsh Parliament, from the Welsh Government executive.
 
-### Q2588
-Question: `"What architectural style became popular in the 19th century?"`
-Raw answer key: `"Medieval Gothic"`
-Selections:
-- [ ] `"Corinthian"`
-- [ ] `"Barroco"`
-- [x] `"Medieval Gothic"`
-- [ ] `"Art Deco"`
-Suggestion: Baroque. `Barroco` is not the English style name. Suggested correction: `Baroque`.
-
 ### Q2600
 Question: `"The Man Booker Prize for Fiction is awarded annually for the best fiction novel written by an author from:"`
 Raw answer key: `"The Commonwealth, Ireland or Zimbabwe"`
@@ -2701,16 +2037,6 @@ Selections:
 - [ ] `"Jewish"`
 Suggestion: Vaisakhi. Both Sikh and Hindu communities are represented while the question asks for one answer. Suggested correction: make it a two-answer question or specify Sikh Khalsa observance.
 
-### Q2657
-Question: `"Which British scientist made important discoveries working with steam power?"`
-Raw answer key: `"James Watt"`
-Selections:
-- [ ] `"David Hume"`
-- [ ] `"Adan Smith"`
-- [ ] `"Alan Turing"`
-- [x] `"James Watt"`
-Suggestion: Adam Smith. `Adan Smith` is misspelled. Suggested correction: `Adam Smith`.
-
 ### Q2658
 Question: `"How can you visit the Northern Ireland Assembly (choose TWO options)?"`
 Raw answer key: `["Contacting the Education Service","Contacting an MLA"]`
@@ -2731,16 +2057,6 @@ Selections:
 - [ ] `"In 1952"`
 Suggestion: First television broadcast. `First` is undefined; 1925, 1932, and the BBC's 1936 regular service refer to different milestones. Suggested correction: specify the milestone, such as Baird's first London-to-Glasgow broadcast.
 
-### Q2661
-Question: `"How many Russian and Polish Jews came to Britain to escape prosecution between 1870 and 1914?"`
-Raw answer key: `"Around 120,000"`
-Selections:
-- [x] `"Around 120,000"`
-- [ ] `"Around 150,000"`
-- [ ] `"Around 200"`
-- [ ] `"Around 400"`
-Suggestion: Persecution. `Prosecution` should be `persecution` in the migration question.
-
 ### Q2664
 Question: `"When was the National Health System (NHS) established?"`
 Raw answer key: `"1948"`
@@ -2751,14 +2067,6 @@ Selections:
 - [ ] `"1934"`
 Suggestion: NHS. The expansion is `National Health Service`, not `National Health System`. Suggested correction: replace the wording.
 
-### Q2665
-Question: `"The King has reigned since her mother’s death in 2022."`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: The King's mother. The question says `her mother` for the King. Suggested correction: `his mother`.
-
 ### Q2666
 Question: `"What is the note with the highest value in the UK?"`
 Raw answer key: `"£50"`
@@ -2768,26 +2076,6 @@ Selections:
 - [ ] `"£200"`
 - [ ] `"£500"`
 Suggestion: Highest Bank of England note. £50 is highest for Bank of England notes, but Scottish and Northern Irish banks issue £100 notes. Suggested correction: restrict the question to Bank of England notes or state the UK-wide distinction.
-
-### Q2678
-Question: `"Which of the following civil laws include disputes between landlords and tenants over issues such as repairs and eviction?"`
-Raw answer key: `"Housing law"`
-Selections:
-- [ ] `"Consumer law"`
-- [x] `"Housing law"`
-- [ ] `"Debt law"`
-- [ ] `"Living law"`
-Suggestion: Housing law. The question should say `Which area of civil law includes...`; the explanation says `suck as repairs`. Suggested correction: use `such as repairs`.
-
-### Q2681
-Question: `"Who was reining in Britain when the British Empire became the largest empire the world has ever seen, with an estimated population of more than 400 million people?"`
-Raw answer key: `"Queen Victoria"`
-Selections:
-- [ ] `"Elizabeth I"`
-- [ ] `"Queen Anne"`
-- [x] `"Queen Victoria"`
-- [ ] `"Henry VIII"`
-Suggestion: Reigning. `Reining` is used for `reigning`. Suggested correction: replace it in each question.
 
 ### Q2689
 Question: `"In which TWO cases may a person who has been summoned to do jury service be exempted from doing it:"`
@@ -2838,16 +2126,6 @@ Selections:
 - [ ] `"Three: ‘guilty’, ‘not guilty’ or ‘on hold’"`
 - [ ] `"Two: ‘guilty’ or ‘not proven’"`
 Suggestion: Scottish verdicts. The not-proven verdict was abolished from 1 January 2026; current answers should be guilty or not guilty. Both also contain `based of`. Suggested correction: update the verdict question and use `based on`.
-
-### Q2746
-Question: `"What animal was cloned by scientists Sir Ian Wilmot and Keith Campbell?"`
-Raw answer key: `"A sheep"`
-Selections:
-- [ ] `"A cow"`
-- [ ] `"A rabbit"`
-- [ ] `"A cat"`
-- [x] `"A sheep"`
-Suggestion: Ian Wilmut. The cloning scientist's surname is repeatedly misspelled `Wilmot`. Suggested correction: `Sir Ian Wilmut`.
 
 ### Q2756
 Question: `"Choose the correct answer. The Middle Ages were:"`
@@ -2929,16 +2207,6 @@ Selections:
 - [ ] `"8 million"`
 Suggestion: Historical UK populations. The UK did not exist in some of the named years, and several figures describe England or Great Britain instead. Suggested correction: specify the historical territory and use its corresponding population.
 
-### Q2803
-Question: `"When did the ‘Concorde’ aircraft retired from service?"`
-Raw answer key: `"In 2003"`
-Selections:
-- [ ] `"In 1976"`
-- [ ] `"In 1999"`
-- [x] `"In 2003"`
-- [ ] `"In 2000"`
-Suggestion: Concorde grammar. `When did the Concorde aircraft retired` should be `When did the Concorde aircraft retire`.
-
 ### Q2804
 Question: `"When did the Allies defeat Germany marking the end of the Second World War?"`
 Raw answer key: `"In May 1945"`
@@ -2948,16 +2216,6 @@ Selections:
 - [ ] `"In August 1945"`
 - [ ] `"In August 1946"`
 Suggestion: End of World War II. May 1945 marked the end of the war in Europe, not the global end of the Second World War. Suggested correction: say `end of the war in Europe`.
-
-### Q2809
-Question: `"What British sportsmen holds a number of English Test cricket records?"`
-Raw answer key: `"Sir Ian Botham"`
-Selections:
-- [ ] `"Bobby Moore"`
-- [ ] `"Sir Jackie Steward"`
-- [x] `"Sir Ian Botham"`
-- [ ] `"Sir Roger Bannister"`
-Suggestion: Cricket records. The question needs `Which British sportsman`; `Sir Jackie Steward` should be `Sir Jackie Stewart`.
 
 ### Q2815
 Question: `"How can you visit the UK Parliament (choose TWO options)?"`
@@ -3019,16 +2277,6 @@ Selections:
 - [ ] `"Just over 5 million"`
 Suggestion: Historical UK populations. The UK did not exist in some of the named years, and several figures describe England or Great Britain instead. Suggested correction: specify the historical territory and use its corresponding population.
 
-### Q2877
-Question: `"Which two scientists were successful at cloning the first mammal, Dolly the sheep?"`
-Raw answer key: `"Sir Ian Wilmot and Keith Campbell"`
-Selections:
-- [ ] `"Sir Frank Whittle and Sir Christopher Cockrell"`
-- [ ] `"Sir Robert Edwards and Patrick Steptoe"`
-- [x] `"Sir Ian Wilmot and Keith Campbell"`
-- [ ] `"Francis Creek and John Logie Baird"`
-Suggestion: Wilmut and Crick. `Ian Wilmot` and `Francis Creek` are misspelled. Suggested correction: `Ian Wilmut` and `Francis Crick`.
-
 ### Q2889
 Question: `"In Wales, the jury has to listen to the evidence presented at the trial and then decide a verdict of ‘guilty’, ‘not guilty’ or ‘not proven’ based of what they have heard:"`
 Raw answer key: `"False"`
@@ -3047,16 +2295,6 @@ Selections:
 - [ ] `"For up to 2 years"`
 Suggestion: Foreign driving licences. `Up to 12 months` is not universal; validity depends on country, licence type, and residency. Suggested correction: specify the relevant licence category and issuing country.
 
-### Q2895
-Question: `"What British discovery was influential in the development of computer science and the modern-day computer?   The Radar"`
-Raw answer key: `"The Turing machine"`
-Selections:
-- [ ] `"The Radar"`
-- [x] `"The Turing machine"`
-- [ ] `"The MRI scanner"`
-- [ ] `"The aeroplane"`
-Suggestion: Stray text. The question has `The Radar` appended. Suggested correction: remove the stray text.
-
 ### Q2899
 Question: `"Which British actor has recently won an Oscar?"`
 Raw answer key: `"Sir Anthony Hopkins"`
@@ -3066,26 +2304,6 @@ Selections:
 - [ ] `"Jude Law"`
 - [ ] `"Richard Burton"`
 Suggestion: Anthony Hopkins. `Recently` is stale and `Antony` is misspelled. Suggested correction: remove the time-relative word, add the year, and use `Anthony`.
-
-### Q2905
-Question: `"Which one of the following four changes did the Chartists did NOT campaign for?"`
-Raw answer key: `"Elections every six years"`
-Selections:
-- [ ] `"For any man to be able to stand as MP"`
-- [ ] `"Secret ballots"`
-- [x] `"Elections every six years"`
-- [ ] `"For MPs to be paid"`
-Suggestion: Chartists grammar. `Which ... did the Chartists did NOT` is incorrect. Suggested correction: `Which ... did the Chartists NOT campaign for?`
-
-### Q2908
-Question: `"When did King Charles III start reining?"`
-Raw answer key: `"In 2022"`
-Selections:
-- [ ] `"In 2020"`
-- [ ] `"In 2021"`
-- [x] `"In 2022"`
-- [ ] `"In 2023"`
-Suggestion: Reigning. `Reining` is used for `reigning`. Suggested correction: replace it in each question.
 
 ### Q2921
 Question: `"Who invented the cash-dispensing ATM (automatic teller machine) or ‘cashpoint’?"`
@@ -3097,16 +2315,6 @@ Selections:
 - [ ] `"Sir Tim Berners-Lee"`
 Suggestion: ATM inventor. The invention is disputed between James Goodfellow and John Shepherd-Barron. Suggested correction: specify PIN-based cash machines, a patent, or the first installed ATM.
 
-### Q2959
-Question: `"When did Henry VIII start reining?"`
-Raw answer key: `"In April 1509"`
-Selections:
-- [x] `"In April 1509"`
-- [ ] `"In June 1497"`
-- [ ] `"In March 1515"`
-- [ ] `"In August 1495"`
-Suggestion: Reigning. `Reining` is used for `reigning`. Suggested correction: replace it in each question.
-
 ### Q2966
 Question: `"When driving in the UK, where do you need to display the tax disc which shows that the annual road tax has been paid?"`
 Raw answer key: `"The windowscreen of the car"`
@@ -3116,16 +2324,6 @@ Selections:
 - [ ] `"The wheel of the car"`
 - [ ] `"The boot of the car"`
 Suggestion: Tax disc. Tax discs were abolished in 2014, and `Windowscreen` is misspelled. Suggested correction: state that vehicle tax is recorded electronically and no disc is displayed; use `windscreen` if needed.
-
-### Q2976
-Question: `"What are the British scientists Sir Ian Wilmot and Keith Campbell famous for?"`
-Raw answer key: `"The cloning of the first mammal, Dolly the sheep"`
-Selections:
-- [ ] `"The first ‘test-tube baby’"`
-- [x] `"The cloning of the first mammal, Dolly the sheep"`
-- [ ] `"The invention of the MRI (magnetic resonance imaging) scanner"`
-- [ ] `"The invention of the World Wide Web"`
-Suggestion: Ian Wilmut. The cloning scientist's surname is repeatedly misspelled `Wilmot`. Suggested correction: `Sir Ian Wilmut`.
 
 ### Q2986
 Question: `"When was Ireland divided into two countries?"`
@@ -3325,16 +2523,6 @@ Selections:
 - [ ] `"False"`
 Suggestion: Civil debt. Owing money is a civil matter/debt claim, not a `civil offence`. Suggested correction: say a creditor may take a debtor to civil court.
 
-### Q3249
-Question: `"Which TWO of the following British athletes have won gold medals in the Olympic Games?"`
-Raw answer key: `["Dame Kelly Holmes","Jessica Enis"]`
-Selections:
-- [x] `"Dame Kelly Holmes"`
-- [ ] `"Jenson Button"`
-- [ ] `"Tim henman"`
-- [x] `"Jessica Enis"`
-Suggestion: Jessica Ennis. `Jessica Enis` is misspelled. Suggested correction: `Jessica Ennis`.
-
 ### Q3252
 Question: `"Which TWO of the following are examples of criminal offences:"`
 Raw answer key: `["Selling tobacco to anyone under the age of 18","Smoking in public places"]`
@@ -3377,16 +2565,6 @@ Selections:
 - [ ] `"The freedom of speech"`
 Suggestion: Bill of Rights. Parliamentary freedom of speech is also part of the Bill of Rights, making the distractor ambiguous. Suggested correction: specify parliamentary freedom of speech or replace the distractor.
 
-### Q3294
-Question: `"Who designed the Clifton Suspension Bridge located over the Avon George?"`
-Raw answer key: `"Isambard Kingdom Brunel"`
-Selections:
-- [ ] `"Sir Norman Foster"`
-- [x] `"Isambard Kingdom Brunel"`
-- [ ] `"Richard Arkwright"`
-- [ ] `"Robert Adam"`
-Suggestion: Avon Gorge. `Avon George` is a place-name typo. Suggested correction: `Avon Gorge`.
-
 ### Q3327
 Question: `"Which British scientist led the development of the atomic bomb?"`
 Raw answer key: `"Ernest Rutherford"`
@@ -3397,16 +2575,6 @@ Selections:
 - [ ] `"Keith Campbell"`
 Suggestion: Atomic bomb leadership. Rutherford died before the Manhattan Project and did not lead atomic-bomb development; one record has no correct option. Suggested correction: ask about the Manhattan Project or a correct scientist/project.
 
-### Q3331
-Question: `"Which two scientists led a team which was the first to succeed in cloning a mammal, Dolly the sheep?"`
-Raw answer key: `"Sir Ian Wilmot and Keith Campbell"`
-Selections:
-- [ ] `"Sir Frank Whittle and Sir Christopher Cockrell"`
-- [ ] `"Sir Robert Edwards and Patrick Steptoe"`
-- [x] `"Sir Ian Wilmot and Keith Campbell"`
-- [ ] `"Francis Creek and John Logie Baird"`
-Suggestion: Ian Wilmut. `Ian Wilmot` is repeatedly misspelled. Suggested correction: `Sir Ian Wilmut`.
-
 ### Q3342
 Question: `"During which movement the Parliament passed laws giving women the right to equal pay and made it illegal for employees to discriminate against women because of their gender:"`
 Raw answer key: `"The Swinging Sixties"`
@@ -3416,16 +2584,6 @@ Selections:
 - [x] `"The Swinging Sixties"`
 - [ ] `"The Suffrage"`
 Suggestion: Equal Pay and Sex Discrimination Acts. The Acts were passed in 1970 and 1975, not simply during the Swinging Sixties; `employees` should be `employers`. Suggested correction: use the correct dates and wording.
-
-### Q3382
-Question: `"What are the British scientists Sir Ian Wilmot and Keith Campbell famous for?"`
-Raw answer key: `"The cloning of the first mammal, Dolly the sheep"`
-Selections:
-- [ ] `"The first ‘test-tube baby’"`
-- [x] `"The cloning of the first mammal, Dolly the sheep"`
-- [ ] `"The invention of the MRI (magnetic resonance imaging) scanner"`
-- [ ] `"The invention of the World Wide Web"`
-Suggestion: Ian Wilmut. `Ian Wilmot` is repeatedly misspelled. Suggested correction: `Sir Ian Wilmut`.
 
 ### Q3417
 Question: `"The UK is not a full member of the European Union because it does not use the Euro currency:"`
@@ -3445,16 +2603,6 @@ Selections:
 - [x] `"John Major"`
 Suggestion: John Major. `British Minister` is ambiguous. Suggested correction: ask who was Prime Minister after Margaret Thatcher.
 
-### Q3434
-Question: `"What animal was cloned by scientists Sir Ian Wilmot and Keith Campbell?"`
-Raw answer key: `"A sheep"`
-Selections:
-- [ ] `"A cow"`
-- [ ] `"A rabbit"`
-- [ ] `"A cat"`
-- [x] `"A sheep"`
-Suggestion: Ian Wilmut. `Ian Wilmot` is repeatedly misspelled. Suggested correction: `Sir Ian Wilmut`.
-
 ### Q3458
 Question: `"Who defeated the Vikings?"`
 Raw answer key: `"King Alfred the Great"`
@@ -3465,16 +2613,6 @@ Selections:
 - [ ] `"James II"`
 Suggestion: Alfred and the Vikings. `Who defeated the Vikings?` is too broad because Alfred defeated a Viking army, not all Vikings. Suggested correction: identify the Viking army and the Battle of Edington in 878.
 
-### Q3465
-Question: `"Which of the following statements about Mary, Queen of the Scotland, is NOT true?"`
-Raw answer key: `"She was a Protestant"`
-Selections:
-- [ ] `"She spent most of her childhood in France"`
-- [x] `"She was a Protestant"`
-- [ ] `"She gave her throne to her Protestant son, James VI of Scotland."`
-- [ ] `"She was kept her prisoner for 20 years"`
-Suggestion: Mary, Queen of Scots. `Queen of the Scotland` is malformed and an option says `She was kept her prisoner`. Suggested correction: use `Mary, Queen of Scots` and complete the option as `She was kept prisoner for about 20 years`.
-
 ### Q3471
 Question: `"Which Act abolished slavery throughout the British Empire in 1833?"`
 Raw answer key: `"The Emancipation Act"`
@@ -3484,24 +2622,6 @@ Selections:
 - [x] `"The Emancipation Act"`
 - [ ] `"The Slavery Act"`
 Suggestion: Slavery abolition. The 1833 Act abolished slavery in most of the Empire, not throughout all territories. Suggested correction: qualify `throughout` and use the formal Act name where appropriate.
-
-### Q3475
-Question: `"The Welsh dragon on the Welsh flag does not appear on the Union Flag because, when the first Union Flag was created in 1606 from the flags of Scotland and England, the Principality of Wales was already untied with England:"`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: Union Flag explanation. The word `untied` is used instead of `united`. Suggested correction: replace it.
-
-### Q3482
-Question: `"How many Russian and Polish Jews came to Britain to escape prosecution between 1870 and 1914?"`
-Raw answer key: `"Around 120,000"`
-Selections:
-- [x] `"Around 120,000"`
-- [ ] `"Around 150,000"`
-- [ ] `"Around 200"`
-- [ ] `"Around 400"`
-Suggestion: Persecution. `Prosecution` should be `persecution` in the migration question.
 
 ### Q3485
 Question: `"When was the first television broadcast made?"`
@@ -3522,16 +2642,6 @@ Selections:
 - [ ] `"The United Kingdom Act"`
 - [ ] `"The Act of Great Britain"`
 Suggestion: Kingdom of Great Britain. The 1707 Acts created the Kingdom of Great Britain; the United Kingdom of Great Britain and Ireland arose from the 1800 Act effective in 1801. Suggested correction: specify which state and Act are meant.
-
-### Q3497
-Question: `"When did Henry VIII start reining?"`
-Raw answer key: `"In April 1509"`
-Selections:
-- [x] `"In April 1509"`
-- [ ] `"In June 1497"`
-- [ ] `"In March 1515"`
-- [ ] `"In August 1495"`
-Suggestion: Henry VIII. `When did Henry VIII start reining?` contains a typo. Suggested correction: `When did Henry VIII start reigning?`
 
 ### Q3502
 Question: `"Who was Prime Minister in England from 1721 to 1742?"`
@@ -3650,16 +2760,6 @@ Selections:
 - [x] `"5 million"`
 - [ ] `"8 million"`
 Suggestion: Historical UK populations. The UK did not exist in some of the named years, and several figures describe England or Great Britain instead. Suggested correction: specify the historical territory and use its corresponding population. | Historical population territory. The UK did not exist in 1600 or 1700, and the figures do not match the stated territory. Suggested correction: ask for England/Great Britain or specify the historical territories.
-
-### Q3609
-Question: `"What British sportsmen holds a number of English Test cricket records?"`
-Raw answer key: `"Sir Ian Botham"`
-Selections:
-- [ ] `"Bobby Moore"`
-- [ ] `"Sir Jackie Steward"`
-- [x] `"Sir Ian Botham"`
-- [ ] `"Sir Roger Bannister"`
-Suggestion: Cricket records. `What British sportsmen holds` has subject-number disagreement. Suggested correction: `Which British sportsman holds...`.
 
 ### Q3611
 Question: `"What TWO names are given to the people who give tours at the Tower of London?"`
@@ -3801,16 +2901,6 @@ Selections:
 - [ ] `"Adrian IV"`
 Suggestion: Gunpowder Plot. Robert Catesby led the group; Guy Fawkes guarded the explosives. Suggested correction: key Catesby or reword the question to ask about the explosives.
 
-### Q3700
-Question: `"What name is given to the day when people play jokes on each other until midday?"`
-Raw answer key: `"April’s Fool Day"`
-Selections:
-- [ ] `"Remembrance Day"`
-- [x] `"April’s Fool Day"`
-- [ ] `"Halloween"`
-- [ ] `"Valentine’s Day"`
-Suggestion: April Fool's Day. `April's Fool Day` is misspelled. Suggested correction: `April Fool's Day` or `April Fools' Day`.
-
 ### Q3712
 Question: `"Which British actor has recently won an Oscar?"`
 Raw answer key: `"Colin Firth"`
@@ -3820,16 +2910,6 @@ Selections:
 - [ ] `"Jude Law"`
 - [ ] `"Charles Chaplin"`
 Suggestion: Actors and Oscars. `Recently` is stale and explanations misspell `Anthony`. Suggested correction: remove the time-relative wording, add the year, and use `Anthony`.
-
-### Q3713
-Question: `"When is St Andrews Day, patron of the Scotland, celebrated?"`
-Raw answer key: `"30th of November"`
-Selections:
-- [ ] `"23rd of April"`
-- [ ] `"1st of March"`
-- [ ] `"17th of March"`
-- [x] `"30th of November"`
-Suggestion: St Andrew's Day. `patron of the Scotland` is malformed. Suggested correction: `St Andrew's Day, patron saint of Scotland`.
 
 ### Q3726
 Question: `"What was the population of the UK in 2005?"`
@@ -3919,16 +2999,6 @@ Selections:
 - [x] `"Over 75"`
 Suggestion: Free TV licence. Age 75+ alone is insufficient; the applicant must receive Pension Credit. Suggested correction: include the Pension Credit condition.
 
-### Q3797
-Question: `"What time do usually pubs open on Sundays in the UK?"`
-Raw answer key: `"12 pm"`
-Selections:
-- [ ] `"10 am"`
-- [ ] `"11 am"`
-- [x] `"12 pm"`
-- [ ] `"1 pm"`
-Suggestion: Sunday pub opening. `What time do usually pubs open` is malformed. Suggested correction: `What time do pubs usually open on Sundays?`
-
 ### Q3810
 Question: `"What was the population of the UK in 1901?"`
 Raw answer key: `"40 million"`
@@ -3948,16 +3018,6 @@ Selections:
 - [x] `"Sailing"`
 - [ ] `"Surfing"`
 Suggestion: Water sports. Surfing is also popular in the UK, so the two-answer key is not unique. Suggested correction: replace the distractor or specify the intended source pair.
-
-### Q3828
-Question: `"What is the minimum age requirement to drive a mopped in the UK?"`
-Raw answer key: `"16"`
-Selections:
-- [x] `"16"`
-- [ ] `"18"`
-- [ ] `"20"`
-- [ ] `"21"`
-Suggestion: Moped. `Mopped` is a typo. Suggested correction: `moped`.
 
 ### Q3832
 Question: `"What can living people donate that may help other people with injuries or illnesses (choose TWO options)?"`
@@ -4009,16 +3069,6 @@ Selections:
 - [x] `"The entrance to the Palace of Westminster is free"`
 Suggestion: Palace of Westminster cost. Some visits/tours are paid even if public-gallery entry can be free. Suggested correction: ask specifically about attending a debate through the public gallery.
 
-### Q3876
-Question: `"Which of the following civil laws include disputes between landlords and tenants over issues such as repairs and eviction?"`
-Raw answer key: `"Housing law"`
-Selections:
-- [ ] `"Consumer law"`
-- [x] `"Housing law"`
-- [ ] `"Debt law"`
-- [ ] `"Living law"`
-Suggestion: Grammar. `suck as repairs` should be `such as repairs`.
-
 ### Q3896
 Question: `"What name is given to the elected members of the Welsh government?"`
 Raw answer key: `"SMs"`
@@ -4049,26 +3099,6 @@ Selections:
 - [ ] `"The Act of Union"`
 Suggestion: EEC and EU. The EEC was the 1957 predecessor; the EU was established in 1993. Suggested correction: distinguish the Treaty of Rome/EEC from the later EU.
 
-### Q3911
-Question: `"When did the King start reining?"`
-Raw answer key: `"In 2022"`
-Selections:
-- [ ] `"In 2020"`
-- [ ] `"In 2021"`
-- [x] `"In 2022"`
-- [ ] `"In 2023"`
-Suggestion: Reigning. `When did the King start reining?` should use `reigning`.
-
-### Q3913
-Question: `"How do we call a set of principles by which a country is governed and which includes all of the institutions that are responsible for running the country and how their power is kept in check?"`
-Raw answer key: `"Constitution"`
-Selections:
-- [ ] `"Revolution"`
-- [x] `"Constitution"`
-- [ ] `"Monarchy"`
-- [ ] `"Democracy"`
-Suggestion: Constitution definition. The opening `How do we call...` is unclear. Suggested correction: `What do we call a set of principles by which a country is governed...?`
-
 ### Q3935
 Question: `"On which of the following issues the  Northern Ireland Assembly CANNOT make decisions?"`
 Raw answer key: `"Planning"`
@@ -4098,16 +3128,6 @@ Selections:
 - [ ] `"Every 4 years"`
 - [x] `"Every 5 years"`
 Suggestion: General elections. Elections may occur sooner than five years. Suggested correction: ask for the maximum normal interval.
-
-### Q3954
-Question: `"What does the term ‘Hansard’ relate to?"`
-Raw answer key: `"Official reports were proceedings in Parliament are published"`
-Selections:
-- [x] `"Official reports were proceedings in Parliament are published"`
-- [ ] `"A popular British soap opera"`
-- [ ] `"A festival which celebrates the founding of the Sikh community"`
-- [ ] `"A public holiday"`
-Suggestion: Hansard. The keyed option is grammatically unintelligible. Suggested correction: `The official reports in which proceedings in Parliament are published`.
 
 ### Q3955
 Question: `"In Wales, the jury has to listen to the evidence presented at the trial and then decide a verdict of ‘guilty’, ‘not guilty’ or ‘not proven’ based of what they have heard:"`
