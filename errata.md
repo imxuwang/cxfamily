@@ -4,7 +4,7 @@ Audit date: 2026-09-21.
 
 This audit covers every record in the `questionBank` array in `life-in-the-uk.html` (4,058 records). Each record was reviewed once, in order, for factual accuracy, answer-key correctness, uniqueness of the correct answer, sensible wording, and corrupted or stale text. Question numbers below are one-based array indices.
 
-The HTML page was not changed by this audit. This file lists each affected record individually.
+The HTML page was not changed by this audit. This file lists question, selection, and answer-key issues individually. Explanation-only corrections are in suggestions.md.
 
 ## Coverage
 
@@ -21,9 +21,11 @@ The HTML page was not changed by this audit. This file lists each affected recor
 | Q3501-Q4058 | 558 | 91 |
 | **Total** | **4,058** | **482** |
 
+Explanation-only corrections moved to `suggestions.md`: 55. Question/selection/answer issues retained here: 427.
+
 ## Errata
 
-Question, answer key, and selections below are copied from the page questionBank. `[x]` marks a selection that matches the raw answer key. Suggestions are audit guidance and do not change the raw markings.
+Question, answer key, and selections below are copied from the page questionBank. `[x]` marks a selection that matches the raw answer key. Suggestions below concern the question, selections, or answer key.
 
 ### Q377
 Question: `"In which year was the death penalty for murder suspended in Great Britain and effectively abolished?"`
@@ -83,26 +85,6 @@ Selections:
 - [ ] `"False"`
 Suggestion: Turner Prize. The artist's name is truncated to `J.` Suggested correction: identify the painter as `J. M. W. Turner`.
 
-### Q814
-Question: `"What is the minimum age required to serve on a jury?"`
-Raw answer key: `"18"`
-Selections:
-- [ ] `"16"`
-- [x] `"18"`
-- [ ] `"21"`
-- [ ] `"25"`
-Suggestion: Jury age and selection. The answer is usable, but both explanations state the obsolete eligibility range `18 to 70`. Suggested correction: use the current applicable range, generally `18 to 75`, and say that jurors are selected randomly from the electoral register.
-
-### Q815
-Question: `"How is a jury selected?"`
-Raw answer key: `"Randomly from the electoral register"`
-Selections:
-- [ ] `"From the NHS registration system"`
-- [x] `"Randomly from the electoral register"`
-- [ ] `"Alphabetically from the telephone directory"`
-- [ ] `"From a postcode selection"`
-Suggestion: Jury age and selection. The answer is usable, but both explanations state the obsolete eligibility range `18 to 70`. Suggested correction: use the current applicable range, generally `18 to 75`, and say that jurors are selected randomly from the electoral register.
-
 ### Q819
 Question: `"By law, which TWO types of media have to give a balanced coverage of all political parties and equal time to rival viewpoints before an election?"`
 Raw answer key: `["Television","Radio"]`
@@ -112,16 +94,6 @@ Selections:
 - [ ] `"Newspapers"`
 - [x] `"Radio"`
 Suggestion: Political media coverage. The key `Television` and `Radio` is intended, but the wording claims equal time for all parties and viewpoints. Suggested correction: ask which media are subject to statutory due-impartiality rules and avoid claiming blanket equal time.
-
-### Q820
-Question: `"Which of the following territories is a Crown dependency but is NOT part of the UK?"`
-Raw answer key: `"The Channel Islands"`
-Selections:
-- [ ] `"Northern Ireland"`
-- [ ] `"Wales"`
-- [x] `"The Channel Islands"`
-- [ ] `"Scotland"`
-Suggestion: Channel Islands status. The explanation calls the Channel Islands British Overseas Territories. Suggested correction: identify them as Crown Dependencies linked to the Crown but not part of the UK.
 
 ### Q840
 Question: `"Which two of the following religious communities celebrate Diwali?"`
@@ -315,14 +287,6 @@ Selections:
 - [x] `"A British officer in charge of the British fleet at the Battle of Trafalgar against the Spanish fleet"`
 Suggestion: Admiral Nelson. The answer says Trafalgar was against the Spanish fleet only. Suggested correction: say `the combined French and Spanish fleet`.
 
-### Q1010
-Question: `"MPs can only be contacted by post."`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"True"`
-- [x] `"False"`
-Suggestion: Contacting MPs. The explanation refers to UK MEPs holding surgeries, but UK MEPs ceased to exist after Brexit. Suggested correction: remove the obsolete MEP reference.
-
 ### Q1026
 Question: `"How many members does the Welsh government have?"`
 Raw answer key: `"60"`
@@ -351,16 +315,6 @@ Selections:
 - [ ] `"False"`
 Suggestion: Broadcast impartiality. The `True` key endorses an equal-time claim that overstates UK broadcasting law. Suggested correction: use due impartiality/due weight wording or key the unqualified statement `False`.
 
-### Q1057
-Question: `"What should you do to make a complaint about the police (choose two answers)?"`
-Raw answer key: `["Go to the Police station directly","Write to the Chief Constable of the police force involved"]`
-Selections:
-- [ ] `"Write a complaint letter to the House of Commons"`
-- [x] `"Go to the Police station directly"`
-- [x] `"Write to the Chief Constable of the police force involved"`
-- [ ] `"Write to your MP"`
-Suggestion: Police complaints. The explanation names the obsolete Independent Police Complaints Commission and Police Complaints Commissioner. Suggested correction: use the Independent Office for Police Conduct in England and Wales, the Police Investigations and Review Commissioner in Scotland, and the Police Ombudsman for Northern Ireland.
-
 ### Q1060
 Question: `"Who was the architect that rebuilt Saint Paul’s cathedral after the Great Fire in 1666?"`
 Raw answer key: `"Sir Christopher Wren"`
@@ -370,22 +324,6 @@ Selections:
 - [ ] `"Sir Norman Foster"`
 - [ ] `"Dame Zaha Hadid"`
 Suggestion: St Paul's Cathedral. The question contains literal backslashes before the apostrophe in `St Paul\\'s`. Suggested correction: replace the corrupted text with `St Paul's`.
-
-### Q1066
-Question: `"Is the BBC controlled by the government?"`
-Raw answer key: `"No"`
-Selections:
-- [ ] `"Yes"`
-- [x] `"No"`
-Suggestion: BBC funding and control. The explanation calls the BBC wholly state-funded. Suggested correction: describe it as editorially independent and publicly funded mainly through the licence fee, with other commercial income.
-
-### Q1082
-Question: `"You have to be at least 21 years old to serve on a jury."`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"True"`
-- [x] `"False"`
-Suggestion: Jury age. The explanation says eligibility ends at 70. Suggested correction: update the current generally applicable upper age to 75.
 
 ### Q1114
 Question: `"How are the members of the Northern Ireland Parliament elected?"`
@@ -416,16 +354,6 @@ Selections:
 - [ ] `"The Lord of the Rings"`
 - [ ] `"Indiana Jones"`
 Suggestion: Harry Potter. The question asks which film but describes a franchise. Suggested correction: change `film` to `film franchise`.
-
-### Q1148
-Question: `"Who led a team of scientists to ‘split the atom‘ for the first time?"`
-Raw answer key: `"Ernest Rutherford"`
-Selections:
-- [ ] `"Alexander Fleming"`
-- [ ] `"Alan Turing"`
-- [x] `"Ernest Rutherford"`
-- [ ] `"Sir Peter Mansfield"`
-Suggestion: Splitting the atom. The explanation misleadingly connects Rutherford's team with the Manhattan Project. Suggested correction: distinguish Rutherford's 1917 nuclear experiment from the later Manhattan Project.
 
 ### Q1168
 Question: `"Who can apply for the National Citizen Service programme?"`
@@ -496,16 +424,6 @@ Selections:
 - [x] `"Anyone who is on the electoral register and is aged 18 to 70 can be asked to serve on a jury."`
 - [ ] `"Anyone who is on the electoral register and is aged 25 to 70 can be asked to serve on a jury."`
 - [ ] `"Anyone who is on the electoral register and is aged 16 to 70 can be asked to serve on a jury."`
-Suggestion: Jury age. The answer/explanation uses the obsolete upper age of 70. Suggested correction: use the current generally applicable range `18 to 75`.
-
-### Q1245
-Question: `"According to the Life in the UK handbook, what is the minimum age required to serve on a jury?"`
-Raw answer key: `"18"`
-Selections:
-- [ ] `"Ayr"`
-- [ ] `"£25"`
-- [ ] `"120"`
-- [x] `"18"`
 Suggestion: Jury age. The answer/explanation uses the obsolete upper age of 70. Suggested correction: use the current generally applicable range `18 to 75`.
 
 ### Q1251
@@ -1797,16 +1715,6 @@ Selections:
 - [ ] `"There are public holidays each year called Summer Holidays, when banks and many other businesses are closed for the day."`
 Suggestion: Truncated true statement. Two distractors end with literal `...`, so the option set is incomplete. Suggested correction: restore complete statements.
 
-### Q2006
-Question: `"According to the Life in the UK handbook, what religion did Elizabeth I follow?"`
-Raw answer key: `"She was a Protestant"`
-Selections:
-- [ ] `"November or December"`
-- [ ] `"The Swinging Sixties"`
-- [x] `"She was a Protestant"`
-- [ ] `"14- and 15-year-olds"`
-Suggestion: Elizabeth I. `Elizabeth the I was a protestant` is malformed. Suggested correction: `Elizabeth I was a Protestant`.
-
 ### Q2010
 Question: `"Complete the statement: \"The correct answer is the _______.\""`
 Raw answer key: `"Royal Air Force"`
@@ -2367,16 +2275,6 @@ Selections:
 - [x] `"The Episcopal Church"`
 Suggestion: Church of England names. The Scottish Episcopal Church and US Episcopal Church are separate Anglican churches, not alternate names for the Church of England. Suggested correction: ask separately for the Anglican churches in Scotland and the United States.
 
-### Q2341
-Question: `"Who was the first British Prime Minister?"`
-Raw answer key: `"Sir Robert Walpole"`
-Selections:
-- [ ] `"Henry Pelham"`
-- [x] `"Sir Robert Walpole"`
-- [ ] `"Admiral Nelson"`
-- [ ] `"Oliver Cromwell"`
-Suggestion: First British Prime Minister. `The first man to British Prime Minister` is malformed. Suggested correction: `The first British Prime Minister`.
-
 ### Q2343
 Question: `"How old do you need to be to apply for a free TV licence?"`
 Raw answer key: `"Over 75"`
@@ -2447,16 +2345,6 @@ Selections:
 - [ ] `"250 years old"`
 Suggestion: Big Ben. Big Ben is the bell, not the clock; the age answer is time-dependent and incorrect. Suggested correction: ask what Big Ben is, or use the Great Clock's 1859 completion date with a reference date.
 
-### Q2372
-Question: `"The small claims procedure is used in England and Wales for minor disputes for:"`
-Raw answer key: `"Claims of less than £10,000"`
-Selections:
-- [ ] `"Claims of less than £15,000"`
-- [ ] `"Claims of less than £5,000"`
-- [ ] `"Claims of less than £3,500"`
-- [x] `"Claims of less than £10,000"`
-Suggestion: Small claims. The explanation gives Scotland's current limit as £3,000. Suggested correction: use £10,000 for England/Wales, £5,000 for Scotland, and £3,000 for Northern Ireland.
-
 ### Q2383
 Question: `"Which TWO of the following water sports are popular in the UK?"`
 Raw answer key: `["Rowing","Sailing"]`
@@ -2466,16 +2354,6 @@ Selections:
 - [x] `"Sailing"`
 - [ ] `"Surfing"`
 Suggestion: Water sports. Surfing is also a popular UK water sport, so the two-answer key `Rowing` and `Sailing` is not unique. Suggested correction: replace the distractor or specify the intended source pair.
-
-### Q2387
-Question: `"Popular social networking websites in the UK include:"`
-Raw answer key: `"Facebook and Twitter"`
-Selections:
-- [ ] `"Drupal and Amazon"`
-- [x] `"Facebook and Twitter"`
-- [ ] `"Dropbox and itunes"`
-- [ ] `"iCloud and itunes"`
-Suggestion: Grammar. `Social networking websites ... are a popular` is grammatically incorrect. Suggested correction: `Social networking websites ... are popular`.
 
 ### Q2389
 Question: `"How often are elections held for the Welsh government?"`
@@ -2497,16 +2375,6 @@ Selections:
 - [x] `"John Major"`
 Suggestion: John Major. `British Minister` is not a defined office. Suggested correction: ask `Who was Prime Minister after Margaret Thatcher?`
 
-### Q2396
-Question: `"What animal is represented in the Welsh flag?"`
-Raw answer key: `"A dragon"`
-Selections:
-- [ ] `"A lion"`
-- [x] `"A dragon"`
-- [ ] `"A tiger"`
-- [ ] `"A cat"`
-Suggestion: United with England. The explanations say `untied` instead of `united`. Suggested correction: replace `untied` with `united` or `incorporated`.
-
 ### Q2400
 Question: `"In which TWO movie categories does Britain continue to be particularly strong at?"`
 Raw answer key: `["Special effects movies","Animation movies"]`
@@ -2516,16 +2384,6 @@ Selections:
 - [ ] `"Thrillers"`
 - [x] `"Animation movies"`
 Suggestion: Grammar. `strong at` should be `strong in`.
-
-### Q2411
-Question: `"In which category did Jayne Torvill and Christopher Dean win gold medals at the Olympic Games in 1984?"`
-Raw answer key: `"Ice dancing"`
-Selections:
-- [ ] `"Rowing"`
-- [ ] `"Marathon"`
-- [ ] `"Swimming"`
-- [x] `"Ice dancing"`
-Suggestion: Grammar. `is one` should be `are among` where the subject is plural.
 
 ### Q2412
 Question: `"What is the first verse of the National Anthem of the UK ‘God save the King’?"`
@@ -2655,16 +2513,6 @@ Selections:
 - [ ] `"John Logie Baird"`
 Suggestion: John MacLeod. `John McLeod` is misspelled for the insulin co-discoverer. Suggested correction: `John MacLeod`.
 
-### Q2476
-Question: `"Which of the following flags is not represented in the union flag?"`
-Raw answer key: `"Welsh"`
-Selections:
-- [x] `"Welsh"`
-- [ ] `"Scottish"`
-- [ ] `"English"`
-- [ ] `"Irish"`
-Suggestion: United with England. The explanations say `untied` instead of `united`. Suggested correction: replace `untied` with `united` or `incorporated`.
-
 ### Q2480
 Question: `"When was the Northern Ireland Parliament established for the first time?"`
 Raw answer key: `"In 1922"`
@@ -2715,16 +2563,6 @@ Selections:
 - [ ] `"The Act of Great Britain"`
 Suggestion: Creation of the United Kingdom. The question conflates the 1800 Act creating the United Kingdom of Great Britain and Ireland with later naming changes. Suggested correction: ask separately about the 1707 Kingdom of Great Britain, the 1800 Act, or the 1927 current name.
 
-### Q2525
-Question: `"Which of the following crosses does NOT form part of the Union Flag?"`
-Raw answer key: `"The cross of St David, patron saint of Wales"`
-Selections:
-- [ ] `"The cross of St George, patron saint of England"`
-- [x] `"The cross of St David, patron saint of Wales"`
-- [ ] `"The cross of St Patrick, patron saint of Ireland"`
-- [ ] `"The cross of St Andrew, patron saint of Scotland"`
-Suggestion: United with England. The explanation says Wales was `untied` with England. Suggested correction: `united` or `incorporated`.
-
 ### Q2533
 Question: `"Who composed a suite of pieces themed around the planets and the solar system called ‘The Planets’?"`
 Raw answer key: `"Gustav Holst"`
@@ -2754,16 +2592,6 @@ Selections:
 - [ ] `"The MPs together"`
 - [ ] `"The judges and Magistrates together"`
 Suggestion: Judiciary. `The judges collectively` is incomplete because magistrates are also part of the judiciary. Suggested correction: write a unique question distinguishing judges and magistrates.
-
-### Q2556
-Question: `"What was the name of the first cloned mammal?"`
-Raw answer key: `"Dolly"`
-Selections:
-- [ ] `"Molly"`
-- [x] `"Dolly"`
-- [ ] `"Colin"`
-- [ ] `"Alice"`
-Suggestion: Ian Wilmut. The cloning scientist's surname is repeatedly misspelled `Wilmot`. Suggested correction: `Sir Ian Wilmut`.
 
 ### Q2561
 Question: `"What TWO names are given to the people who give tours at the Tower of London?"`
@@ -2825,16 +2653,6 @@ Selections:
 - [ ] `"The European Union, Canada or Australia"`
 Suggestion: Booker Prize eligibility. The Man Booker terminology and historical eligibility are stale. Suggested correction: use `Booker Prize` and add a date qualifier or current any-nationality eligibility.
 
-### Q2610
-Question: `"How many devolved administrations are there in the UK?"`
-Raw answer key: `"3"`
-Selections:
-- [ ] `"2"`
-- [x] `"3"`
-- [ ] `"4"`
-- [ ] `"5"`
-Suggestion: Devolved bodies. The Scottish Parliament and Northern Ireland Assembly are legislatures, not devolved administrations. Suggested correction: call the administrations the Scottish Government and Northern Ireland Executive.
-
 ### Q2623
 Question: `"Which of the following statements is true?"`
 Raw answer key: `"County Courts deal with a wide range of civil disputes including family matters, breaches of contract and divorce."`
@@ -2882,14 +2700,6 @@ Selections:
 - [x] `"Sikh"`
 - [ ] `"Jewish"`
 Suggestion: Vaisakhi. Both Sikh and Hindu communities are represented while the question asks for one answer. Suggested correction: make it a two-answer question or specify Sikh Khalsa observance.
-
-### Q2656
-Question: `"The Senedd has 129 Senedd members."`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"True"`
-- [x] `"False"`
-Suggestion: Senedd spelling and membership. `Senned` is misspelled and the 60-member explanation is stale. Suggested correction: use `Senedd`, `MSs`, and current membership details.
 
 ### Q2657
 Question: `"Which British scientist made important discoveries working with steam power?"`
@@ -2959,16 +2769,6 @@ Selections:
 - [ ] `"£500"`
 Suggestion: Highest Bank of England note. £50 is highest for Bank of England notes, but Scottish and Northern Irish banks issue £100 notes. Suggested correction: restrict the question to Bank of England notes or state the UK-wide distinction.
 
-### Q2668
-Question: `"What is celebrated during Diwali?"`
-Raw answer key: `"The victory of good over evil and the gaining of knowledge"`
-Selections:
-- [ ] `"Jesus Christ rising from the dead"`
-- [x] `"The victory of good over evil and the gaining of knowledge"`
-- [ ] `"The founding of the Sikh community known as the Khalsa"`
-- [ ] `"The beginning of the winter season"`
-Suggestion: Diwali spelling. `Diwalli` is misspelled. Suggested correction: `Diwali`.
-
 ### Q2678
 Question: `"Which of the following civil laws include disputes between landlords and tenants over issues such as repairs and eviction?"`
 Raw answer key: `"Housing law"`
@@ -2998,16 +2798,6 @@ Selections:
 - [x] `"If they provide a good reason to be excused, such as ill health"`
 - [ ] `"If they have to go to work"`
 Suggestion: Criminal convictions and jury service. A conviction does not automatically disqualify every person; disqualification depends on conviction and sentence. Suggested correction: distinguish disqualification from being excused.
-
-### Q2690
-Question: `"What is the role of the shadow cabinet?"`
-Raw answer key: `"To challenge the government and put forward alternative policies"`
-Selections:
-- [ ] `"To keep order during political debates to make sure the rules are followed"`
-- [x] `"To challenge the government and put forward alternative policies"`
-- [ ] `"To point out what they see as the government’s failures and weaknesses"`
-- [ ] `"To control important public appointments"`
-Suggestion: Contradictory explanation. The explanation begins `Incorrect` even though the keyed answer is correct. Suggested correction: remove the contradictory word.
 
 ### Q2692
 Question: `"On which of the following issues the Northern Ireland Assembly CANNOT make decisions?"`
@@ -3099,26 +2889,6 @@ Selections:
 - [ ] `"The Suffrage"`
 Suggestion: Equal Pay and Sex Discrimination Acts. The Acts were passed in 1970 and 1975, not simply during the Swinging Sixties; the text also says employees instead of employers. Suggested correction: state the correct decades/Acts and use `employers`.
 
-### Q2789
-Question: `"Who can get a 50% discount on their TV licences?"`
-Raw answer key: `"Blind people"`
-Selections:
-- [x] `"Blind people"`
-- [ ] `"People over 65"`
-- [ ] `"People over 75"`
-- [ ] `"People on benefits"`
-Suggestion: Free TV licence. Blind people may qualify for a 50% discount, but a free licence for someone 75+ requires Pension Credit. Suggested correction: state the Pension Credit condition.
-
-### Q2791
-Question: `"Which of the following British actresses has NOT won an Oscar?"`
-Raw answer key: `"Emily Watson"`
-Selections:
-- [ ] `"Tilda Swinton"`
-- [ ] `"Dame Judi Dench"`
-- [x] `"Emily Watson"`
-- [ ] `"Kate Winslet"`
-Suggestion: Anthony Hopkins. `Recently` is stale and `Antony` is misspelled. Suggested correction: remove the time-relative word, add the year, and use `Anthony`.
-
 ### Q2794
 Question: `"How can you visit the Northern Ireland Assembly (choose TWO options)?"`
 Raw answer key: `["Contacting the Education Service","Contacting an MLA"]`
@@ -3208,16 +2978,6 @@ Selections:
 - [ ] `"In 1925"`
 - [ ] `"In 1928"`
 Suggestion: Northern Ireland Parliament. The first Parliament was established/opened in 1921, not 1922. Suggested correction: use `1921` or ask a separate 1922 Irish Free State question.
-
-### Q2829
-Question: `"Which landscape architect designed grounds around country houses so that the landscape appeared to be natural, with grass, trees and lakes?"`
-Raw answer key: `"Lancelot ‘Capability’ Brown"`
-Selections:
-- [ ] `"Clarice Cliff"`
-- [x] `"Lancelot ‘Capability’ Brown"`
-- [ ] `"Alexander McQueen"`
-- [ ] `"Vivienne Westwood"`
-Suggestion: Capability Brown. Edwin Lutyens could not have worked with Capability Brown; Brown died in 1783 and Lutyens was born in 1869. Suggested correction: remove that sentence.
 
 ### Q2839
 Question: `"How long does it take to donate blood?"`
@@ -3336,36 +3096,6 @@ Selections:
 - [ ] `"Patrick Steptoe"`
 - [ ] `"Sir Tim Berners-Lee"`
 Suggestion: ATM inventor. The invention is disputed between James Goodfellow and John Shepherd-Barron. Suggested correction: specify PIN-based cash machines, a patent, or the first installed ATM.
-
-### Q2924
-Question: `"What name is given to the candelabrum lit during the eight-day holiday of Hanukkah?"`
-Raw answer key: `"Menorah"`
-Selections:
-- [x] `"Menorah"`
-- [ ] `"Diwali"`
-- [ ] `"Ramadan"`
-- [ ] `"Baisakhi"`
-Suggestion: Hanukkah lamp. A Hanukkah lamp has nine lights including the shamash and is more precisely a hanukkiah; the explanation says eight candles. Suggested correction: use `hanukkiah` and describe the nine lights.
-
-### Q2932
-Question: `"Which of the following lines from Shakespeare’s plays and poems is often still quoted?"`
-Raw answer key: `"The Darling buds of May"`
-Selections:
-- [x] `"The Darling buds of May"`
-- [ ] `"I have nothing to offer but blood, toil, tears and sweat"`
-- [ ] `"Long live our noble King"`
-- [ ] `"God save the King"`
-Suggestion: Sonnet 18. The explanation calls Sonnet 18 a play. Suggested correction: call it a poem/sonnet.
-
-### Q2958
-Question: `"Which of the following is NOT classified as a criminal offence in the UK?"`
-Raw answer key: `"Unfair dismissal or discrimination in the workplace"`
-Selections:
-- [ ] `"Smoking in public places"`
-- [ ] `"Selling or buying drugs"`
-- [ ] `"Carrying a weapon"`
-- [x] `"Unfair dismissal or discrimination in the workplace"`
-Suggestion: Civil matter terminology. Unfair dismissal/discrimination is a civil claim or matter, not a `civil offence`. Suggested correction: use `civil claim` or `civil matter`.
 
 ### Q2959
 Question: `"When did Henry VIII start reining?"`
@@ -3503,14 +3233,6 @@ Selections:
 - [ ] `"Sweden and Germany"`
 Suggestion: Viking origins. Sweden is omitted from the answer. Suggested correction: use `Denmark, Norway and Sweden` or `Scandinavia`.
 
-### Q3101
-Question: `"The Welsh government has 30 Senedd members."`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"True"`
-- [x] `"False"`
-Suggestion: Welsh Government and Senedd. The explanation says the Welsh Government has Senedd members. Suggested correction: explain that the Senedd is the 60-member legislature and the Welsh Government is the executive.
-
 ### Q3109
 Question: `"What was the name of the European Union when it was first established?"`
 Raw answer key: `"European Economic Community"`
@@ -3577,16 +3299,6 @@ Selections:
 - [ ] `"55,000"`
 Suggestion: Battle of the Somme. `60,000` was the first-day casualty figure, not the number who died. Suggested correction: change `died` to `casualties` or provide the approximate death figure.
 
-### Q3204
-Question: `"When was the first Union flag created?"`
-Raw answer key: `"1606"`
-Selections:
-- [ ] `"1515"`
-- [ ] `"1616"`
-- [ ] `"1505"`
-- [x] `"1606"`
-Suggestion: Union Flag explanation. The word `untied` is used instead of `united`. Suggested correction: replace it.
-
 ### Q3209
 Question: `"People on the electoral register with ages between 18 and 70 can be asked to serve on a jury."`
 Raw answer key: `"True"`
@@ -3643,16 +3355,6 @@ Selections:
 - [ ] `"A discount in taxes"`
 Suggestion: Residents' voting rights. Permanent residents do not universally have voting rights; eligibility depends on nationality and election. Suggested correction: ask about British citizens or eligible voters.
 
-### Q3269
-Question: `"What do you need to apply to become a permanent resident or citizen of the UK (choose TWO options)?"`
-Raw answer key: `["To be able to speak and read English","A good understanding of life in the UK"]`
-Selections:
-- [ ] `"A British driving licence"`
-- [x] `"To be able to speak and read English"`
-- [ ] `"A British university degree"`
-- [x] `"A good understanding of life in the UK"`
-Suggestion: Settlement requirements. The explanation answers a different question about resident rights. Suggested correction: explain the language and Life in the UK requirements, including exemptions.
-
 ### Q3270
 Question: `"What does the UK offer to its residents or citizens (choose FIVE answers)?"`
 Raw answer key: `["Freedom of belief and religion","Freedom of speech","Freedom from unfair discrimination","A right to a fair trial","A right to join in the election of a government"]`
@@ -3664,22 +3366,6 @@ Selections:
 - [ ] `"Free university tuition fees"`
 - [x] `"A right to join in the election of a government"`
 Suggestion: Residents' voting rights. Permanent residents do not universally have voting rights; eligibility depends on nationality and election. Suggested correction: ask about British citizens or eligible voters.
-
-### Q3285
-Question: `"British values and principles are based on history and traditions and are protected by law, customs and expectations."`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: British values. The explanation discusses Crown Dependencies rather than democracy, rule of law, liberty, tolerance, and community participation. Suggested correction: replace the explanation with one relevant to the statement.
-
-### Q3287
-Question: `"As part of the citizenship ceremony, new citizens pledge their loyalty to the United Kingdom and to respect its rights and freedoms."`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: Citizenship ceremony. The explanation discusses the national anthem rather than the citizenship pledge. Suggested correction: explain the loyalty/respect pledge.
 
 ### Q3293
 Question: `"What did the ‘Bill of Rights‘ confirm in 1689?"`
@@ -3700,26 +3386,6 @@ Selections:
 - [ ] `"Richard Arkwright"`
 - [ ] `"Robert Adam"`
 Suggestion: Avon Gorge. `Avon George` is a place-name typo. Suggested correction: `Avon Gorge`.
-
-### Q3307
-Question: `"Which of the following crosses does NOT form part of the Union Flag?"`
-Raw answer key: `"The cross of St David, patron saint of Wales"`
-Selections:
-- [ ] `"The cross of St George, patron saint of England"`
-- [x] `"The cross of St David, patron saint of Wales"`
-- [ ] `"The cross of St Patrick, patron saint of Ireland"`
-- [ ] `"The cross of St Andrew, patron saint of Scotland"`
-Suggestion: Union Flag explanation. The word `untied` is used instead of `united`. Suggested correction: replace it.
-
-### Q3313
-Question: `"What was the name of the first cloned mammal?"`
-Raw answer key: `"Dolly"`
-Selections:
-- [ ] `"Molly"`
-- [x] `"Dolly"`
-- [ ] `"Colin"`
-- [ ] `"Alice"`
-Suggestion: Ian Wilmut. `Ian Wilmot` is repeatedly misspelled. Suggested correction: `Sir Ian Wilmut`.
 
 ### Q3327
 Question: `"Which British scientist led the development of the atomic bomb?"`
@@ -3778,16 +3444,6 @@ Selections:
 - [ ] `"Gordon Brown"`
 - [x] `"John Major"`
 Suggestion: John Major. `British Minister` is ambiguous. Suggested correction: ask who was Prime Minister after Margaret Thatcher.
-
-### Q3421
-Question: `"What animal is represented in the Welsh flag?"`
-Raw answer key: `"A dragon"`
-Selections:
-- [ ] `"A lion"`
-- [x] `"A dragon"`
-- [ ] `"A tiger"`
-- [ ] `"A cat"`
-Suggestion: Union Flag explanation. The word `untied` is used instead of `united`. Suggested correction: replace it.
 
 ### Q3434
 Question: `"What animal was cloned by scientists Sir Ian Wilmot and Keith Campbell?"`
@@ -3897,16 +3553,6 @@ Selections:
 - [ ] `"In 1928"`
 Suggestion: Partition of Ireland. `1922` refers to the Irish Free State, while partition was legislated in 1920 and took effect in 1921. Suggested correction: specify the event being dated.
 
-### Q3516
-Question: `"What was the name of the project through which the atomic bomb was developed?"`
-Raw answer key: `"The Manhattan project"`
-Selections:
-- [x] `"The Manhattan project"`
-- [ ] `"The Cambridge project"`
-- [ ] `"The Michigan project"`
-- [ ] `"The Manchester project"`
-Suggestion: Manhattan Project. The explanation wrongly connects Rutherford's scientists to the atomic-bomb project. Suggested correction: describe the US-led Manhattan Project and remove Rutherford's involvement.
-
 ### Q3525
 Question: `"After the Second World War, England was exhausted economically."`
 Raw answer key: `"True"`
@@ -3964,16 +3610,6 @@ Selections:
 - [ ] `"30th of March"`
 - [ ] `"30th of April"`
 Suggestion: Vaisakhi date. Vaisakhi is generally observed on 13 or 14 April rather than fixed at 14 April. Suggested correction: use `13 or 14 April`.
-
-### Q3558
-Question: `"Which landscape architect designed grounds around country houses so that the landscape appeared to be natural, with grass, trees and lakes?"`
-Raw answer key: `"Lancelot ‘Capability’ Brown"`
-Selections:
-- [ ] `"Clarice Cliff"`
-- [x] `"Lancelot ‘Capability’ Brown"`
-- [ ] `"Alexander McQueen"`
-- [ ] `"Vivienne Westwood"`
-Suggestion: Capability Brown. Edwin Lutyens could not have worked with Capability Brown; Brown died in 1783 and Lutyens was born in 1869. Suggested correction: remove that sentence. | Capability Brown. The explanation says Brown worked with Edwin Lutyens, who lived a century later. Suggested correction: remove that sentence.
 
 ### Q3565
 Question: `"Which flower is associated with Northern Ireland?"`
@@ -4075,16 +3711,6 @@ Selections:
 - [x] `"The Episcopal Church"`
 Suggestion: Church of England names. The Scottish Episcopal Church and US Episcopal Church are separate churches, not simply names for the Church of England. Suggested correction: ask separately for the Anglican church in Scotland or the United States.
 
-### Q3632
-Question: `"In which city is the Welsh Assembly building, also known as Senedd, located?"`
-Raw answer key: `"Cardiff Bay"`
-Selections:
-- [ ] `"Edinburgh"`
-- [ ] `"Belfast"`
-- [x] `"Cardiff Bay"`
-- [ ] `"Swansea"`
-Suggestion: Senedd terminology. `SMs`/`AMs` is obsolete or incorrect. Suggested correction: use `MSs`/`Members of the Senedd` and distinguish the legislature from the Government.
-
 ### Q3644
 Question: `"When is the Mercury Music Prize awarded?"`
 Raw answer key: `"September"`
@@ -4105,16 +3731,6 @@ Selections:
 - [ ] `"Baisakhi"`
 Suggestion: Hanukkah lamp. The explanation describes eight candles, but a hanukkiah has nine lights including the shamash. Suggested correction: use `hanukkiah` and describe the nine lights.
 
-### Q3651
-Question: `"When does Lent take place?"`
-Raw answer key: `"40 days before Easter"`
-Selections:
-- [ ] `"40 days before Christmas"`
-- [ ] `"40 days after Christmas"`
-- [x] `"40 days before Easter"`
-- [ ] `"40 days after Easter"`
-Suggestion: Lent. Lent begins on Ash Wednesday; it contains 40 fasting days because Sundays are excluded, not simply 40 calendar days before Easter. Suggested correction: state both facts.
-
 ### Q3652
 Question: `"Which of the following national galleries is NOT located in London?"`
 Raw answer key: `"The National Museum"`
@@ -4134,16 +3750,6 @@ Selections:
 - [ ] `"200 years old"`
 - [ ] `"250 years old"`
 Suggestion: Big Ben clock age. Big Ben is the bell, not the clock, and the age answer is time-dependent. Suggested correction: ask when the Great Clock was completed or ask what Big Ben is.
-
-### Q3662
-Question: `"What is celebrated during Diwali?"`
-Raw answer key: `"The victory of good over evil and the gaining of knowledge"`
-Selections:
-- [ ] `"Jesus Christ rising from the dead"`
-- [x] `"The victory of good over evil and the gaining of knowledge"`
-- [ ] `"The founding of the Sikh community known as the Khalsa"`
-- [ ] `"The beginning of the winter season"`
-Suggestion: Spelling. `Diwalli`/`Hannukah` are misspellings. Suggested correction: `Diwali` and `Hanukkah`.
 
 ### Q3665
 Question: `"Which British actor has recently won an Oscar?"`
@@ -4265,16 +3871,6 @@ Selections:
 - [ ] `"The European Union, Canada or Australia"`
 Suggestion: Booker Prize eligibility. The historical Commonwealth/Ireland/Zimbabwe restriction is obsolete. Suggested correction: use current eligibility and date the question.
 
-### Q3732
-Question: `"Who can get a 50% discount on their TV licences?"`
-Raw answer key: `"Blind people"`
-Selections:
-- [x] `"Blind people"`
-- [ ] `"People over 65"`
-- [ ] `"People over 75"`
-- [ ] `"People on benefits"`
-Suggestion: Free TV licence. Blind people may qualify for a 50% discount, but a free licence for someone 75+ requires Pension Credit. Suggested correction: state the Pension Credit condition. | Free TV licence. Age 75+ alone is insufficient; the applicant must receive Pension Credit. Suggested correction: include the Pension Credit condition.
-
 ### Q3739
 Question: `"On Remembrance Day, there is a two-minute silence at 11 AM to commemorate those who died fighting during the First World War?"`
 Raw answer key: `"True"`
@@ -4343,16 +3939,6 @@ Selections:
 - [ ] `"50 million"`
 Suggestion: UK population in 1901. The UK including Ireland had about 46 million people, not 40 million. Suggested correction: update the figure or specify Great Britain.
 
-### Q3814
-Question: `"When is the Jewish celebration known as Hanukkah normally celebrated?"`
-Raw answer key: `"November or December"`
-Selections:
-- [ ] `"June or July"`
-- [ ] `"October or November"`
-- [x] `"November or December"`
-- [ ] `"March or April"`
-Suggestion: Spelling. `Diwalli`/`Hannukah` are misspellings. Suggested correction: `Diwali` and `Hanukkah`.
-
 ### Q3816
 Question: `"Which TWO of the following water sports are popular in the UK?"`
 Raw answer key: `["Rowing","Sailing"]`
@@ -4363,16 +3949,6 @@ Selections:
 - [ ] `"Surfing"`
 Suggestion: Water sports. Surfing is also popular in the UK, so the two-answer key is not unique. Suggested correction: replace the distractor or specify the intended source pair.
 
-### Q3821
-Question: `"The small claims procedure is used in England and Wales for minor disputes for:"`
-Raw answer key: `"Claims of less than £10,000"`
-Selections:
-- [ ] `"Claims of less than £3,000"`
-- [ ] `"Claims of less than £4,000"`
-- [ ] `"Claims of less than £3,500"`
-- [x] `"Claims of less than £10,000"`
-Suggestion: Small claims. Scotland's current limit is £5,000, not £3,000. Suggested correction: state £10,000 for England/Wales, £5,000 for Scotland, and £3,000 for Northern Ireland.
-
 ### Q3828
 Question: `"What is the minimum age requirement to drive a mopped in the UK?"`
 Raw answer key: `"16"`
@@ -4382,16 +3958,6 @@ Selections:
 - [ ] `"20"`
 - [ ] `"21"`
 Suggestion: Moped. `Mopped` is a typo. Suggested correction: `moped`.
-
-### Q3829
-Question: `"How many countries formed the European Economic Community (EEC) when it was first created in 1957?"`
-Raw answer key: `"Six"`
-Selections:
-- [ ] `"Five"`
-- [x] `"Six"`
-- [ ] `"Seven"`
-- [ ] `"Nine"`
-Suggestion: EEC and EU. The EEC was the 1957 predecessor; the EU was established in 1993. Suggested correction: distinguish the Treaty of Rome/EEC from the later EU.
 
 ### Q3832
 Question: `"What can living people donate that may help other people with injuries or illnesses (choose TWO options)?"`
@@ -4443,16 +4009,6 @@ Selections:
 - [x] `"The entrance to the Palace of Westminster is free"`
 Suggestion: Palace of Westminster cost. Some visits/tours are paid even if public-gallery entry can be free. Suggested correction: ask specifically about attending a debate through the public gallery.
 
-### Q3871
-Question: `"What is the main function of the Council of Europe?"`
-Raw answer key: `"Protect and promote human rights"`
-Selections:
-- [x] `"Protect and promote human rights"`
-- [ ] `"Promote international trade relationships"`
-- [ ] `"Maintain international peace"`
-- [ ] `"Recommend action when there are international crises and threats to peace"`
-Suggestion: Council of Europe membership. The explanation/options use 47 members; the current Council of Europe has 46. Suggested correction: update the answer and explanation. | Council of Europe. The current membership is 46, not 47. Suggested correction: update the answer/options and explanations.
-
 ### Q3876
 Question: `"Which of the following civil laws include disputes between landlords and tenants over issues such as repairs and eviction?"`
 Raw answer key: `"Housing law"`
@@ -4462,16 +4018,6 @@ Selections:
 - [ ] `"Debt law"`
 - [ ] `"Living law"`
 Suggestion: Grammar. `suck as repairs` should be `such as repairs`.
-
-### Q3887
-Question: `"Which of the following is NOT classified as a criminal offence in the UK?"`
-Raw answer key: `"Unfair dismissal or discrimination in the workplace"`
-Selections:
-- [ ] `"Smoking in public places"`
-- [ ] `"Selling or buying drugs"`
-- [ ] `"Carrying a weapon"`
-- [x] `"Unfair dismissal or discrimination in the workplace"`
-Suggestion: Civil matter terminology. Unfair dismissal/discrimination is a civil claim or matter, not a `civil offence`. Suggested correction: use `civil claim` or `civil matter`. | Civil offence terminology. Unfair dismissal/discrimination are civil claims or matters, not civil offences. Suggested correction: use `civil claim` or `civil matter`.
 
 ### Q3896
 Question: `"What name is given to the elected members of the Welsh government?"`
@@ -4523,16 +4069,6 @@ Selections:
 - [ ] `"Democracy"`
 Suggestion: Constitution definition. The opening `How do we call...` is unclear. Suggested correction: `What do we call a set of principles by which a country is governed...?`
 
-### Q3917
-Question: `"How often are elections held for the Senedd?"`
-Raw answer key: `"Every four years"`
-Selections:
-- [ ] `"Every three years"`
-- [x] `"Every four years"`
-- [ ] `"Every five years"`
-- [ ] `"Every six years"`
-Suggestion: Senedd elections. The explanation uses the obsolete 60-member figure and `SMs`. Suggested correction: update membership/electoral details and use `MSs`.
-
 ### Q3935
 Question: `"On which of the following issues the  Northern Ireland Assembly CANNOT make decisions?"`
 Raw answer key: `"Planning"`
@@ -4552,26 +4088,6 @@ Selections:
 - [ ] `"Camila, the Princess of Wales"`
 - [ ] `"Kate, the Queen Consort"`
 Suggestion: Queen Camilla. `Camila, the Queen Consort` is misspelled and outdated. Suggested correction: `Camilla, Queen Camilla`.
-
-### Q3942
-Question: `"What is the name of the building where the Senedd members meet?"`
-Raw answer key: `"Senedd"`
-Selections:
-- [ ] `"Westminster"`
-- [ ] `"Stormont"`
-- [ ] `"Holyrood"`
-- [x] `"Senedd"`
-Suggestion: Senedd terminology. `SMs`/`AMs` is obsolete or incorrect. Suggested correction: use `MSs`/`Members of the Senedd` and distinguish the legislature from the Government.
-
-### Q3944
-Question: `"When was the Treaty of Rome signed?"`
-Raw answer key: `"25th March 1957"`
-Selections:
-- [ ] `"25th May 1957"`
-- [x] `"25th March 1957"`
-- [ ] `"28th May 1957"`
-- [ ] `"28th March 1957"`
-Suggestion: EEC and EU. The EEC was the 1957 predecessor; the EU was established in 1993. Suggested correction: distinguish the Treaty of Rome/EEC from the later EU. | Treaty of Rome. The explanation incorrectly says the EU was originally called the EEC. Suggested correction: say the treaty established the EEC, predecessor of the EU.
 
 ### Q3946
 Question: `"How often are the general elections held in the UK?"`
@@ -4641,14 +4157,6 @@ Selections:
 - [ ] `"About 15 minutes"`
 Suggestion: Blood donation duration. The donation itself takes roughly 5-10 minutes; about an hour describes the full appointment. Suggested correction: specify which duration is being tested. | Blood donation. About an hour is the full appointment; the donation itself is about 5-10 minutes. Suggested correction: specify which duration is intended.
 
-### Q3978
-Question: `"Drinking in public can be a criminal offence and you can be fined or arrested for it:"`
-Raw answer key: `"True"`
-Selections:
-- [x] `"True"`
-- [ ] `"False"`
-Suggestion: Statement typo. `This stamens is true` should be `This statement is true`.
-
 ### Q3979
 Question: `"Whose details are NOT listed in the Phone Book?"`
 Raw answer key: `"The King"`
@@ -4709,16 +4217,6 @@ Selections:
 - [ ] `"Two: ‘guilty’ or ‘not proven’"`
 Suggestion: Scottish/Welsh verdicts. `based of` should be `based on`; Q3955 also contains an invisible character in the option. Q4012 relies on the obsolete not-proven verdict. Suggested correction: clean the text and update current Scottish verdict law.
 
-### Q4027
-Question: `"Which of the following is NOT a role of the King:"`
-Raw answer key: `"To inaugurate important business in the UK"`
-Selections:
-- [x] `"To inaugurate important business in the UK"`
-- [ ] `"To receive foreign ambassadors and high commissioners"`
-- [ ] `"To entertain visiting heads of state"`
-- [ ] `"To make state visits overseas"`
-Suggestion: King's role. The explanation says `other counties` and contains malformed diplomatic wording. Suggested correction: use `other countries` and `in support of diplomatic relationships`.
-
 ### Q4030
 Question: `"Who has control over policy and laws governing defence, foreign affairs, immigration, taxation and social security in Northern Ireland?"`
 Raw answer key: `"The central UK government"`
@@ -4736,34 +4234,6 @@ Selections:
 - [x] `"True"`
 - [ ] `"False"`
 Suggestion: Northern Ireland devolved powers. Planning, social security, and some taxation are not all reserved to the central government; planning is devolved. Suggested correction: use a genuinely reserved matter such as defence, or explicitly describe limited devolved powers.
-
-### Q4039
-Question: `"Carrying a weapon is a criminal offence, unless it is for self-defence:"`
-Raw answer key: `"False"`
-Selections:
-- [ ] `"True"`
-- [x] `"False"`
-Suggestion: Carrying weapons. The explanation incorrectly says carrying any weapon is criminal; lawful authority/reasonable-excuse rules matter. Suggested correction: state the narrower public offensive-weapon rule.
-
-### Q4045
-Question: `"Which of the following is NOT classified as a criminal offence in the UK?"`
-Raw answer key: `"Unfair dismissal or discrimination in the workplace"`
-Selections:
-- [ ] `"Selling alcohol to anyone under the age of 18"`
-- [ ] `"Selling or buying drugs"`
-- [ ] `"Carrying a knife"`
-- [x] `"Unfair dismissal or discrimination in the workplace"`
-Suggestion: Civil matter terminology. Unfair dismissal/discrimination is a civil claim or matter, not a `civil offence`. Suggested correction: use `civil claim` or `civil matter`. | Civil offence terminology. Unfair dismissal/discrimination are civil claims or matters, not civil offences. Suggested correction: use `civil claim` or `civil matter`.
-
-### Q4047
-Question: `"When are local elections for councillors held in most local authorities?"`
-Raw answer key: `"In May"`
-Selections:
-- [x] `"In May"`
-- [ ] `"In March"`
-- [ ] `"In February"`
-- [ ] `"In June"`
-Suggestion: Local elections. Elections are usually in May but not every year in every authority. Suggested correction: mention each council's election cycle.
 
 ### Q4053
 Question: `"What was the name of the European Union when it was first established?"`
